@@ -1,0 +1,63 @@
+#flexed {
+    text-align:center;
+    position: fixed;
+    z-index: 1;
+    bottom:0;
+    left:0;
+    width:100%;
+    *{
+        transition: all 0.5s;
+    }
+    #slogan {
+        padding: 0;
+        background-color: $Secundario3;
+        display: flex;
+        justify-content: center;
+        p {
+            padding: 0.5%;
+            margin: 0%;
+            color: $Blanco2;
+            font-family: $letra2;
+            font-size: 70%;
+            letter-spacing: 0.3em;
+        }
+    }
+    #navbarNav {
+        width: 100%;
+        height: 100%;
+        background-color: $Secundario;
+        display: flex;
+        justify-content: center;
+        #barra {
+            width: 90%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 0.5%;
+            background-color: $Secundario;
+            ul {
+                padding: 0;
+                li {
+                    padding: 0;
+                    list-style: none;
+                    a {
+                        text-decoration: none;
+                        color: $Negro2;
+                        font-family: $letra2;
+                        font-size: 100%; 
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+    }
+   #slogan.abajo {
+        background-color: $Transparente;
+        p {
+            padding: 0;
+            margin: 0;
+            font-size: 0;
+        }
+    }
+}

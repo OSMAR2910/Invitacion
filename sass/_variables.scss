@@ -1,0 +1,42 @@
+/*Colores*/
+$Rosat: #ffc3c3dc;
+$Rosaf: #ffc3c3;
+$Rosa: #ffdcdc;
+$Blanco: #f2f0ed;
+$Blanco2: #ffffff;
+$Negro: #0d0d0d;
+$Negro2: #000000;
+$Gris: #bebebe;
+$Dorado: #D4AF37;
+$Rojot: #861720aa;
+$Rojo: #861720;
+$Amarillo: #f4d62a;
+$Transparente: rgba(255, 255, 255, 0);
+//Default
+$Primario: #d8d8d8;
+$Secundario: #ffffff;
+$Secundario2:#000000;
+$Secundario3:#5c3168;
+$Secundario4:#7f0019;
+
+/*Tipos de letra*/
+  @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Chonburi&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Arima:wght@300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap');
+  @import url('https://fonts.cdnfonts.com/css/reigo');
+//$Letra:;
+.l-m {
+  color: #9b57cd;
+}
+
+.l-v {
+  color: #a8be5b;
+}
+//$Letra2:;
+$lerea1: 'Arima', system-ui;
+$letra2: 'Quicksand', sans-serif;

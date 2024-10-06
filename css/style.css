@@ -1,0 +1,474 @@
+/*Colores*/
+/*Tipos de letra*/
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gruppo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chonburi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Potta+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arima:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap");
+@import url("https://fonts.cdnfonts.com/css/reigo");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gruppo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chonburi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Potta+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arima:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap");
+@import url("https://fonts.cdnfonts.com/css/reigo");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gruppo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chonburi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Potta+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arima:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap");
+@import url("https://fonts.cdnfonts.com/css/reigo");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gruppo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chonburi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Potta+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arima:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap");
+@import url("https://fonts.cdnfonts.com/css/reigo");
+.l-m {
+  color: #9b57cd;
+}
+
+.l-v {
+  color: #a8be5b;
+}
+
+@keyframes preloader {
+  100% {
+    transform: scale(2);
+  }
+}
+@keyframes preloader {
+  100% {
+    transform: scale(2);
+  }
+}
+/*@keyframes btn_fullscreen {
+    0% {
+        transform: rotate(none) scale(1);
+    }
+    50% {
+        transform: rotate(50deg) scale(1.1);
+        background-color: $Blanco;
+    }
+    100% {
+        transform: rotate(none) scale(1);
+    }
+}*/
+/*@keyframes logo {
+    0% {
+        transform: translate(0, -100vh);
+    }
+    50% {
+        transform: translate(0, 3vh);
+    }
+    100% {
+        transform:translate(0, 0vh);
+    }
+}*/
+/*@keyframes logo_palpitar {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1); 
+    }
+}*/
+/*@keyframes iz {
+    0% {
+        transform: translateX(-100vw);
+    }
+    50% {
+        transform: translateX(2vw);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}*/
+/*Colores*/
+/*Tipos de letra*/
+.l-m {
+  color: #9b57cd;
+}
+
+.l-v {
+  color: #a8be5b;
+}
+
+#loader {
+  background-color: #d8d8d8;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  z-index: 100000;
+}
+#loader .loader__element {
+  border-radius: 100%;
+  border: 5px solid #5c3168;
+  margin: 10px;
+}
+#loader .loader__element:nth-child(1) {
+  animation: preloader 0.6s ease-in-out alternate infinite;
+}
+#loader .loader__element:nth-child(2) {
+  animation: preloader 0.6s ease-in-out alternate 0.2s infinite;
+}
+#loader .loader__element:nth-child(3) {
+  animation: preloader 0.6s ease-in-out alternate 0.4s infinite;
+}
+
+/*Colores*/
+/*Tipos de letra*/
+.l-m {
+  color: #9b57cd;
+}
+
+.l-v {
+  color: #a8be5b;
+}
+
+html {
+  --color-white: #ffffff;
+  --color-black: #191919;
+  --color-bg: linear-gradient(120deg, #723185 0%, #723185 100%);
+  --color-a: linear-gradient(45deg, #7f0019 0%, #7f0019 100%);
+  box-sizing: border-box;
+}
+
+.c-cursor {
+  --size: 15px;
+  position: fixed;
+  width: var(--size);
+  height: var(--size);
+  top: calc(var(--size) / -2);
+  left: calc(var(--size) / -2);
+  transform: translate(var(--cursor-x, -100px), var(--cursor-y, -100px)) translateZ(0);
+  pointer-events: none;
+  transition: none;
+  z-index: 15000;
+  will-change: transform;
+}
+.is-debug .c-cursor {
+  transition: all 0.2s ease-in-out;
+}
+.c-cursor__inner {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-image: var(--color-bg);
+  border: 1px solid var(--color-white);
+  transition: all 0.15s ease-in-out;
+  opacity: 1;
+  transform: scale(1) translateZ(0);
+}
+.c-cursor.is-clicked .c-cursor__inner {
+  opacity: 0.5;
+}
+.c-cursor.is-hidden .c-cursor__inner {
+  opacity: 0;
+}
+.c-cursor.is-link-hovered .c-cursor__inner {
+  transform: scale(0.75) translateZ(0);
+  background-image: var(--color-a);
+}
+
+.has-custom-cursor,
+.has-custom-cursor * {
+  cursor: none !important;
+}
+
+/*Colores*/
+/*Tipos de letra*/
+.l-m {
+  color: #9b57cd;
+}
+
+.l-v {
+  color: #a8be5b;
+}
+
+#flexed {
+  text-align: center;
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+#flexed * {
+  transition: all 0.5s;
+}
+#flexed #slogan {
+  padding: 0;
+  background-color: #5c3168;
+  display: flex;
+  justify-content: center;
+}
+#flexed #slogan p {
+  padding: 0.5%;
+  margin: 0%;
+  color: #ffffff;
+  font-family: "Quicksand", sans-serif;
+  font-size: 70%;
+  letter-spacing: 0.3em;
+}
+#flexed #navbarNav {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+#flexed #navbarNav #barra {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.5%;
+  background-color: #ffffff;
+}
+#flexed #navbarNav #barra ul {
+  padding: 0;
+}
+#flexed #navbarNav #barra ul li {
+  padding: 0;
+  list-style: none;
+}
+#flexed #navbarNav #barra ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-family: "Quicksand", sans-serif;
+  font-size: 100%;
+  font-weight: 300;
+}
+#flexed #slogan.abajo {
+  background-color: rgba(255, 255, 255, 0);
+}
+#flexed #slogan.abajo p {
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d8d8d8;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #d8d8d8;
+}
+body .pags {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+body #pag1 {
+  display: flex;
+}
+body #pag1 main {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/2.1.png);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  font-size: 120%;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: italic;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  color: #7f0019;
+  text-align: center;
+}
+body #pag1 main h1, body #pag1 main h2 {
+  margin: 0;
+  padding: 0.5%;
+}
+body #pag2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body #pag2 #boxmapicon {
+  width: 4rem;
+  height: 4rem;
+  margin: 1%;
+  display: flex;
+  background-color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+body #pag2 #boxmapicon a {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  font-size: 100%;
+  color: #5c3168;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+}
+body #pag2 #boxmapicon a ion-icon {
+  width: 100%;
+  height: 100%;
+}
+body #pag2 #boxmap {
+  width: 30%;
+  height: 55%;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 2rem;
+  margin: 0;
+  padding: 0;
+}
+body #pag2 #boxmap div {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+body #pag2 #boxmap iframe {
+  width: 95%;
+  height: 95%;
+  border-radius: 1.5rem;
+}
+body #pag3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body #pag3 #fecha {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body #pag3 #fecha .simply-section {
+  width: 20%;
+  height: 25%;
+  margin: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 1rem;
+}
+body #pag3 #fecha .simply-section div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body #pag3 #fecha .simply-section div .simply-amount {
+  font-size: 150%;
+  margin: 1.5%;
+  color: #7f0019;
+  font-family: "Arima", system-ui;
+  font-weight: 550;
+}
+body #pag3 #fecha .simply-section div .simply-word {
+  font-size: 150%;
+  margin: 1.5%;
+  color: #7f0019;
+  font-family: "Arima", system-ui;
+  font-weight: 550;
+}
+body #pag4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body #pag4 #paleta {
+  width: 25rem;
+  height: 25rem;
+  background-color: #ffffff;
+  background-image: url(../img/Colorimetria.png);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  border-radius: 100%;
+  padding: 1%;
+  margin: 1%;
+}
+body #pag4 #estilo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  width: 15rem;
+  height: 5rem;
+  border-radius: 1rem;
+  margin: 1%;
+}
+body #pag4 #estilo ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+body #pag4 #estilo ul li {
+  margin: 10%;
+  color: #7f0019;
+  font-family: "Arima", system-ui;
+}
+body #pag5 #carrusel {
+  height: 90%;
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}/*# sourceMappingURL=style.css.map */
