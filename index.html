@@ -24,6 +24,15 @@
         </div>
     </section>
     <section id="flexed">
+        <div class="boton-modal">
+            <div>
+                <label for="btn-modal">
+                    <p>Registrar familia</p>
+                    <ion-icon name="information-circle-outline"></ion-icon>
+                </label>
+            </div>
+        </div>
+        <div id="nav">
         <div id="navbarNav">
             <div id="barra">
                 <ul>
@@ -66,7 +75,33 @@
         <div id="slogan">
             <p>Selecciona la opcion que te interece.</p>
         </div>
+        </div>
     </section>
+
+    <input type="checkbox" id="btn-modal">
+    <div class="modals" id="modal1">
+        <div class="btn-close">
+            <div>
+                <label for="btn-modal">
+                    <ion-icon name="close-outline"></ion-icon>
+                </label>
+            </div>
+        </div>
+        <div>
+            <div>
+                <div id="info-modal">
+                        <h2>Prohibido</h2>
+                    <ul>
+                        <li>Invalidos</li>
+                        <li>Borrachos</li>
+                        <li>Eriks</li>
+                    </ul>
+                    <iframe id="form" src="https://docs.google.com/forms/d/e/1FAIpQLSfku2W21PRjkf2STiuui7IWjfqkL7t0m2k6ePClTh76ZwXn1A/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <section class="pags" id="pag1">
         <main>
             <h2>Estas invitado</h2>
@@ -84,7 +119,10 @@
         </div>
     </section>
     <section class="pags" id="pag3">
-        <div id="fecha"></div>
+        <div id="contador"></div>
+        <div id="fecha">
+            <p>15/11/24</p>
+        </div>
     </section>
     <section class="pags" id="pag4">
         <div id="paleta"></div>
@@ -113,5 +151,6 @@
     <script nomodule  src  = " https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js " > </script>
    <script src="js/simplyCountdown.min.js"></script>
    <script src="js/countdown.js"></script>
+</script>
 </body>
 </html>

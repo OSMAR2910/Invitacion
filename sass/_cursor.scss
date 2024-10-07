@@ -1,6 +1,5 @@
-@import "variables";
 @mixin md() {
-    @media (min-width: 610px) {
+@media (min-width: 610px) {
         @content;
     }
 }

@@ -2,6 +2,7 @@
 @import "cursor";
 @import "variables";
 @import "navbarNav";
+@import "modals";
 *{
     scroll-behavior:smooth;
 }
@@ -107,15 +108,16 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
-        #fecha {
+        flex-direction: column;
+        #contador {
             width: 80vw;
-            height: 80vh;
+            height: 20vh;
             display: flex;
             justify-content: center;
             align-items: center;
             .simply-section {
                 width: 20%;
-                height: 25%;
+                height: 100%;
                 margin: 5%;
                 display: flex;
                 justify-content: center;
@@ -145,6 +147,22 @@ body{
                         font-weight: 550;
                     }
                 }
+            }
+        }
+        #fecha {
+            width: 9vw;
+            height: 6vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $Secundario;
+            border-radius: 1rem;
+            margin-top: 3%;
+            p {
+                font-size: 130%;
+                color: $Secundario4;
+                font-family: $lerea1;
+                font-weight: 550;
             }
         }
     }
@@ -187,6 +205,8 @@ body{
                     color: $Secundario4;
                     font-family: $lerea1;
                     a {
+                        color: $Secundario4;
+                        font-family: $lerea1;
                         text-decoration: none;
                     }
                 }
@@ -228,12 +248,12 @@ body{
             }
         }
         #pag3 {
-            #fecha {
+            #contador {
                 width: 95vw;
-                height: 50vh;
+                height: 10vh;
                 .simply-section {
                     width: 25%;
-                    height: 20%;
+                    height: 100%;
                     margin: 1%;
                     div {
                         .simply-amount {
@@ -245,6 +265,22 @@ body{
                             margin: 1%;
                         }
                     }
+                }
+            }
+            #fecha {
+                width: 20vw;
+                height: 5vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $Secundario;
+                border-radius: 1rem;
+                margin-top: 5%;
+                p {
+                    font-size: 80%;
+                    color: $Secundario4;
+                    font-family: $lerea1;
+                    font-weight: 550;
                 }
             }
         }

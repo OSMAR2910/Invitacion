@@ -27,80 +27,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Arima:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap");
 @import url("https://fonts.cdnfonts.com/css/reigo");
-@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Gruppo&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Chonburi&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Potta+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Arima:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap");
-@import url("https://fonts.cdnfonts.com/css/reigo");
-.l-m {
-  color: #9b57cd;
-}
-
-.l-v {
-  color: #a8be5b;
-}
-
-@keyframes preloader {
-  100% {
-    transform: scale(2);
-  }
-}
-@keyframes preloader {
-  100% {
-    transform: scale(2);
-  }
-}
-/*@keyframes btn_fullscreen {
-    0% {
-        transform: rotate(none) scale(1);
-    }
-    50% {
-        transform: rotate(50deg) scale(1.1);
-        background-color: $Blanco;
-    }
-    100% {
-        transform: rotate(none) scale(1);
-    }
-}*/
-/*@keyframes logo {
-    0% {
-        transform: translate(0, -100vh);
-    }
-    50% {
-        transform: translate(0, 3vh);
-    }
-    100% {
-        transform:translate(0, 0vh);
-    }
-}*/
-/*@keyframes logo_palpitar {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.05);
-    }
-    100% {
-        transform: scale(1); 
-    }
-}*/
-/*@keyframes iz {
-    0% {
-        transform: translateX(-100vw);
-    }
-    50% {
-        transform: translateX(2vw);
-    }
-    100% {
-        transform: translateX(0);
-    }
-}*/
-/*Colores*/
-/*Tipos de letra*/
 .l-m {
   color: #9b57cd;
 }
@@ -136,16 +62,6 @@
 }
 #loader .loader__element:nth-child(3) {
   animation: preloader 0.6s ease-in-out alternate 0.4s infinite;
-}
-
-/*Colores*/
-/*Tipos de letra*/
-.l-m {
-  color: #9b57cd;
-}
-
-.l-v {
-  color: #a8be5b;
 }
 
 html {
@@ -209,24 +125,66 @@ html {
   color: #a8be5b;
 }
 
-#flexed {
+/*Colores*/
+/*Tipos de letra*/
+.l-m {
+  color: #9b57cd;
+}
+
+.l-v {
+  color: #a8be5b;
+}
+
+#flexed * {
+  transition: all 0.5s;
+}
+#flexed .boton-modal {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: fixed;
+  justify-content: end;
+}
+#flexed .boton-modal div {
+  width: 5.5rem;
+  height: 1rem;
+  margin: 1.5%;
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+#flexed .boton-modal div label {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #5c3168;
+}
+#flexed .boton-modal div label ion-icon {
+  font-size: 350%;
+}
+#flexed .boton-modal div label p {
+  font-size: 90%;
+}
+#flexed #nav {
+  z-index: 999;
   text-align: center;
   position: fixed;
-  z-index: 1;
   bottom: 0;
   left: 0;
   width: 100%;
 }
-#flexed * {
-  transition: all 0.5s;
-}
-#flexed #slogan {
+#flexed #nav #slogan {
   padding: 0;
   background-color: #5c3168;
   display: flex;
   justify-content: center;
 }
-#flexed #slogan p {
+#flexed #nav #slogan p {
   padding: 0.5%;
   margin: 0%;
   color: #ffffff;
@@ -234,14 +192,14 @@ html {
   font-size: 70%;
   letter-spacing: 0.3em;
 }
-#flexed #navbarNav {
+#flexed #nav #navbarNav {
   width: 100%;
   height: 100%;
   background-color: #ffffff;
   display: flex;
   justify-content: center;
 }
-#flexed #navbarNav #barra {
+#flexed #nav #navbarNav #barra {
   width: 90%;
   height: 100%;
   display: flex;
@@ -250,45 +208,141 @@ html {
   padding: 0.5%;
   background-color: #ffffff;
 }
-#flexed #navbarNav #barra ul {
+#flexed #nav #navbarNav #barra ul {
   padding: 0;
 }
-#flexed #navbarNav #barra ul li {
+#flexed #nav #navbarNav #barra ul li {
   padding: 0;
   list-style: none;
 }
-#flexed #navbarNav #barra ul li a {
+#flexed #nav #navbarNav #barra ul li a {
   text-decoration: none;
   color: #000000;
   font-family: "Quicksand", sans-serif;
   font-size: 100%;
   font-weight: 300;
 }
-#flexed #slogan.abajo {
-  background-color: rgba(255, 255, 255, 0);
+#flexed #nav #slogan.abajo {
+  background-color: rgba(0, 0, 0, 0.685);
 }
-#flexed #slogan.abajo p {
+#flexed #nav #slogan.abajo p {
   padding: 0;
   margin: 0;
   font-size: 0;
 }
 
 @media screen and (max-width: 500px) {
-  #flexed #slogan {
+  #flexed #nav #slogan {
     margin-bottom: 1vh;
   }
-  #flexed #slogan p {
+  #flexed #nav #slogan p {
     font-size: 60%;
   }
-  #flexed #navbarNav #barra {
+  #flexed #nav #navbarNav #barra {
     width: 95%;
   }
-  #flexed #navbarNav #barra ul li a {
+  #flexed #nav #navbarNav #barra ul li a {
     font-size: 70%;
     font-weight: 550;
   }
-  #flexed #slogan.abajo {
+  #flexed #nav #slogan.abajo {
     margin-bottom: 0;
+  }
+}
+#btn-modal {
+  display: none;
+}
+
+#btn-modal:checked ~ .modals {
+  display: flex;
+}
+
+.modals {
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.685);
+}
+.modals .btn-close {
+  display: flex;
+  position: fixed;
+  justify-content: start;
+  align-items: end;
+}
+.modals .btn-close div {
+  width: 7.5rem;
+  height: 3rem;
+  margin: 1.5% 0.6%;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+.modals .btn-close div label {
+  width: 100%;
+  height: 100%;
+  font-size: 350%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #5c3168;
+  font-family: "Quicksand", sans-serif;
+}
+.modals div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.modals div div {
+  width: 30%;
+  height: 50%;
+  border-radius: 1rem;
+  background-color: #ffffff;
+}
+.modals div div #info-modal {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modals div div #info-modal h2 {
+  margin: 3%;
+  color: #5c3168;
+  font-family: "Quicksand", sans-serif;
+  font-size: 150%;
+}
+.modals div div #info-modal ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1%;
+  padding: 0;
+}
+.modals div div #info-modal ul li {
+  display: inline;
+  color: #5c3168;
+  font-family: "Quicksand", sans-serif;
+  font-size: 110%;
+}
+.modals div div #info-modal #form {
+  width: 100%;
+  height: 100%;
+  z-index: 1001;
+}
+
+@media screen and (max-width: 500px) {
+  .modals div div {
+    width: 90%;
+    height: 50%;
   }
 }
 * {
@@ -401,17 +455,18 @@ body #pag3 {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
-body #pag3 #fecha {
+body #pag3 #contador {
   width: 80vw;
-  height: 80vh;
+  height: 20vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-body #pag3 #fecha .simply-section {
+body #pag3 #contador .simply-section {
   width: 20%;
-  height: 25%;
+  height: 100%;
   margin: 5%;
   display: flex;
   justify-content: center;
@@ -420,7 +475,7 @@ body #pag3 #fecha .simply-section {
   background-color: #ffffff;
   border-radius: 1rem;
 }
-body #pag3 #fecha .simply-section div {
+body #pag3 #contador .simply-section div {
   width: 100%;
   height: 100%;
   display: flex;
@@ -428,16 +483,32 @@ body #pag3 #fecha .simply-section div {
   align-items: center;
   flex-direction: column;
 }
-body #pag3 #fecha .simply-section div .simply-amount {
+body #pag3 #contador .simply-section div .simply-amount {
   font-size: 150%;
   margin: 1.5%;
   color: #7f0019;
   font-family: "Arima", system-ui;
   font-weight: 550;
 }
-body #pag3 #fecha .simply-section div .simply-word {
+body #pag3 #contador .simply-section div .simply-word {
   font-size: 150%;
   margin: 1.5%;
+  color: #7f0019;
+  font-family: "Arima", system-ui;
+  font-weight: 550;
+}
+body #pag3 #fecha {
+  width: 9vw;
+  height: 6vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  margin-top: 3%;
+}
+body #pag3 #fecha p {
+  font-size: 130%;
   color: #7f0019;
   font-family: "Arima", system-ui;
   font-weight: 550;
@@ -485,6 +556,8 @@ body #pag4 #estilo ul li {
   font-family: "Arima", system-ui;
 }
 body #pag4 #estilo ul li a {
+  color: #7f0019;
+  font-family: "Arima", system-ui;
   text-decoration: none;
 }
 body #pag5 {
@@ -518,22 +591,38 @@ body #pag5 #carrusel {
     width: 80%;
     height: 35%;
   }
-  body #pag3 #fecha {
+  body #pag3 #contador {
     width: 95vw;
-    height: 50vh;
+    height: 10vh;
   }
-  body #pag3 #fecha .simply-section {
+  body #pag3 #contador .simply-section {
     width: 25%;
-    height: 20%;
+    height: 100%;
     margin: 1%;
   }
-  body #pag3 #fecha .simply-section div .simply-amount {
+  body #pag3 #contador .simply-section div .simply-amount {
     font-size: 100%;
     margin: 1%;
   }
-  body #pag3 #fecha .simply-section div .simply-word {
+  body #pag3 #contador .simply-section div .simply-word {
     font-size: 100%;
     margin: 1%;
+  }
+  body #pag3 #fecha {
+    width: 20vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    margin-top: 5%;
+  }
+  body #pag3 #fecha p {
+    font-size: 80%;
+    color: #7f0019;
+    font-family: "Arima", system-ui;
+    font-weight: 550;
   }
   body #pag4 #paleta {
     width: 17rem;

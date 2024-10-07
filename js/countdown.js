@@ -1,4 +1,4 @@
-simplyCountdown('#fecha', {
+simplyCountdown('#contador', {
     year: 2024, // required
     month: 11, // required
     day: 15, // required
@@ -17,7 +17,7 @@ simplyCountdown('#fecha', {
     // in case of inline set to false
     enableUtc: true, //Use UTC or not - default : false
     onEnd: function() { 
-        alert("fINALIZO!");
+        alert("Finalizo!");
         return; }, //Callback on countdown end, put your own function here
     refresh: 1000, // default refresh every 1s
     sectionClass: 'simply-section', //section css class
