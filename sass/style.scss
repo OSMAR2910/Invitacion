@@ -234,10 +234,23 @@ body{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        #reload {
+            width: 2rem;
+            height: 2rem;
+            margin-top: 1%;
+            border-radius: 100%;
+            background-color: $Secundario3;
+            a {
+                width: 90%;
+                height: 90%;
+                font-size: 200%;
+                color: $Secundario;
+            }
+        }
         #apk {
             width: 2rem;
             height: 2rem;
-            margin-top: 2%;
+            margin-top: 1%;
             border-radius: 100%;
             background-color: $Secundario3;
             a {

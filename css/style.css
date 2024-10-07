@@ -580,10 +580,23 @@ body #database {
   justify-content: center;
   align-items: center;
 }
+body #database #reload {
+  width: 2rem;
+  height: 2rem;
+  margin-top: 1%;
+  border-radius: 100%;
+  background-color: #5c3168;
+}
+body #database #reload a {
+  width: 90%;
+  height: 90%;
+  font-size: 200%;
+  color: #ffffff;
+}
 body #database #apk {
   width: 2rem;
   height: 2rem;
-  margin-top: 2%;
+  margin-top: 1%;
   border-radius: 100%;
   background-color: #5c3168;
 }
