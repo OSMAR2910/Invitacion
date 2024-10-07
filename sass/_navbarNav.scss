@@ -61,3 +61,29 @@
         }
     }
 }
+@media screen and (max-width: 500px) {
+#flexed {
+    #slogan {
+        margin-bottom: 1vh;
+        p {
+            font-size: 60%;
+        }
+    }
+    #navbarNav {
+        #barra {
+            width: 95%;
+            ul {
+                li {
+                    a {
+                        font-size: 70%; 
+                        font-weight: 550;
+                    }
+                }
+            }
+        }
+    }
+   #slogan.abajo {
+    margin-bottom: 0;
+    }
+}
+}

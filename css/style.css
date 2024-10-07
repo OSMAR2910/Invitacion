@@ -273,6 +273,24 @@ html {
   font-size: 0;
 }
 
+@media screen and (max-width: 500px) {
+  #flexed #slogan {
+    margin-bottom: 1vh;
+  }
+  #flexed #slogan p {
+    font-size: 60%;
+  }
+  #flexed #navbarNav #barra {
+    width: 95%;
+  }
+  #flexed #navbarNav #barra ul li a {
+    font-size: 70%;
+    font-weight: 550;
+  }
+  #flexed #slogan.abajo {
+    margin-bottom: 0;
+  }
+}
 * {
   scroll-behavior: smooth;
 }
@@ -385,8 +403,8 @@ body #pag3 {
   align-items: center;
 }
 body #pag3 #fecha {
-  width: 80%;
-  height: 80%;
+  width: 80vw;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -431,8 +449,8 @@ body #pag4 {
   flex-direction: column;
 }
 body #pag4 #paleta {
-  width: 25rem;
-  height: 25rem;
+  width: 23rem;
+  height: 23rem;
   background-color: #ffffff;
   background-image: url(../img/Colorimetria.png);
   background-size: cover;
@@ -466,9 +484,70 @@ body #pag4 #estilo ul li {
   color: #7f0019;
   font-family: "Arima", system-ui;
 }
+body #pag4 #estilo ul li a {
+  text-decoration: none;
+}
+body #pag5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 body #pag5 #carrusel {
-  height: 90%;
+  width: 97%;
+  height: 80%;
   display: flex;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
+}
+
+@media screen and (max-width: 500px) {
+  body #pag1 {
+    display: flex;
+  }
+  body #pag1 main {
+    background-image: url(../img/2.png);
+    background-size: 100%;
+    font-size: 80%;
+  }
+  body #pag2 #boxmapicon {
+    width: 3rem;
+    height: 3rem;
+    margin: 3%;
+  }
+  body #pag2 #boxmap {
+    width: 80%;
+    height: 35%;
+  }
+  body #pag3 #fecha {
+    width: 95vw;
+    height: 50vh;
+  }
+  body #pag3 #fecha .simply-section {
+    width: 25%;
+    height: 20%;
+    margin: 1%;
+  }
+  body #pag3 #fecha .simply-section div .simply-amount {
+    font-size: 100%;
+    margin: 1%;
+  }
+  body #pag3 #fecha .simply-section div .simply-word {
+    font-size: 100%;
+    margin: 1%;
+  }
+  body #pag4 #paleta {
+    width: 17rem;
+    height: 17rem;
+  }
+  body #pag4 #estilo {
+    width: 13rem;
+    height: 4rem;
+  }
+  body #pag4 #estilo ul li {
+    margin: 5%;
+  }
+  body #pag5 #carrusel {
+    width: 95%;
+    height: 60%;
+  }
 }/*# sourceMappingURL=style.css.map */
