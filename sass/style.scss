@@ -158,7 +158,8 @@ body{
             background-color: $Secundario;
             border-radius: 1rem;
             margin-top: 3%;
-            p {
+            a {
+                text-decoration: none;
                 font-size: 130%;
                 color: $Secundario4;
                 font-family: $lerea1;
@@ -312,7 +313,7 @@ body{
                 background-color: $Secundario;
                 border-radius: 1rem;
                 margin-top: 5%;
-                p {
+                a {
                     font-size: 80%;
                     color: $Secundario4;
                     font-family: $lerea1;

@@ -140,14 +140,14 @@ html {
 }
 #flexed .boton-modal {
   width: 100vw;
-  height: 100vh;
+  height: 0vh;
   display: flex;
   position: fixed;
   justify-content: end;
 }
 #flexed .boton-modal div {
-  width: 5.5rem;
-  height: 1rem;
+  width: 6.5rem;
+  height: 2rem;
   margin: 1.5%;
   padding: 1rem;
   border-radius: 1rem;
@@ -155,6 +155,7 @@ html {
   justify-content: center;
   align-items: center;
   background-color: #ffffff;
+  z-index: 5000;
 }
 #flexed .boton-modal div label {
   width: 100%;
@@ -168,7 +169,7 @@ html {
   font-size: 350%;
 }
 #flexed .boton-modal div label p {
-  font-size: 90%;
+  font-size: 110%;
 }
 #flexed #nav {
   z-index: 999;
@@ -232,9 +233,6 @@ html {
 }
 
 @media screen and (max-width: 500px) {
-  #flexed #nav #slogan {
-    margin-bottom: 1vh;
-  }
   #flexed #nav #slogan p {
     font-size: 60%;
   }
@@ -251,6 +249,7 @@ html {
 }
 #btn-modal {
   display: none;
+  z-index: -500;
 }
 
 #btn-modal:checked ~ .modals {
@@ -274,8 +273,8 @@ html {
   align-items: end;
 }
 .modals .btn-close div {
-  width: 7.5rem;
-  height: 3rem;
+  width: 8.5rem;
+  height: 4rem;
   margin: 1.5% 0.6%;
   border-radius: 1rem;
   display: flex;
@@ -507,7 +506,8 @@ body #pag3 #fecha {
   border-radius: 1rem;
   margin-top: 3%;
 }
-body #pag3 #fecha p {
+body #pag3 #fecha a {
+  text-decoration: none;
   font-size: 130%;
   color: #7f0019;
   font-family: "Arima", system-ui;
@@ -653,7 +653,7 @@ body #database #base #data {
     border-radius: 1rem;
     margin-top: 5%;
   }
-  body #pag3 #fecha p {
+  body #pag3 #fecha a {
     font-size: 80%;
     color: #7f0019;
     font-family: "Arima", system-ui;

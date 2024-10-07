@@ -1,5 +1,6 @@
 #btn-modal {
     display: none;
+    z-index: -500;
 }
 #btn-modal:checked ~ .modals {
     display: flex;
@@ -18,8 +19,8 @@
         justify-content: start;
         align-items: end;
         div {
-            width: 7.5rem;
-            height: 3rem;
+            width: 8.5rem;
+            height: 4rem;
             margin: 1.5% 0.6%;
             border-radius: 1rem;
             display: flex;
