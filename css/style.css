@@ -576,10 +576,24 @@ body #database {
   width: 100vw;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-body #database div {
+body #database #apk {
+  width: 2rem;
+  height: 2rem;
+  margin-top: 2%;
+  border-radius: 100%;
+  background-color: #5c3168;
+}
+body #database #apk a {
+  width: 90%;
+  height: 90%;
+  font-size: 200%;
+  color: #ffffff;
+}
+body #database #base {
   width: 50rem;
   height: 50rem;
   display: flex;
@@ -588,7 +602,7 @@ body #database div {
   background-color: #5c3168;
   border-radius: 2rem;
 }
-body #database div #data {
+body #database #base #data {
   width: 95%;
   height: 95%;
   border-radius: 2rem;
@@ -660,12 +674,20 @@ body #database div #data {
     width: 95%;
     height: 60%;
   }
-  body #database div {
+  body #database #apk {
+    width: 2rem;
+    height: 2rem;
+    margin-top: 2%;
+  }
+  body #database #apk a {
+    font-size: 200%;
+  }
+  body #database #base {
     width: 90%;
-    height: 70%;
+    height: 60%;
     border-radius: 1rem;
   }
-  body #database div #data {
+  body #database #base #data {
     border-radius: 1rem;
   }
 }/*# sourceMappingURL=style.css.map */
