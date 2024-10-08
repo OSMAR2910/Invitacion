@@ -234,6 +234,20 @@ body{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        #base {
+            width: 50rem;
+            height: 50rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $Secundario3;
+            border-radius: 2rem;
+            #data {
+                width: 95%;
+                height: 95%;
+                border-radius: 2rem;
+            }
+        }
         #reload {
             width: 2rem;
             height: 2rem;
@@ -260,20 +274,6 @@ body{
                 color: $Secundario;
             }
         }
-        #base {
-            width: 50rem;
-            height: 50rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: $Secundario3;
-            border-radius: 2rem;
-            #data {
-                width: 95%;
-                height: 95%;
-                border-radius: 2rem;
-            }
-        }
     }
 }
 @media screen and (max-width: 500px) {
@@ -283,7 +283,7 @@ body{
             main {
                 background-image: url(../img/2.png);
                 background-size: 100%;
-                font-size: 80%;
+                font-size: 70%;
             }
         }
         #pag2 {
@@ -357,20 +357,23 @@ body{
         }
 
         #database {
+            #base {
+                width: 90%;
+                height: 50%;
+                border-radius: 1rem;
+                #data {
+                    border-radius: 1rem;
+                }
+            }
+            #reload {
+                margin-top: 5%;
+            }
             #apk {
                 width: 2rem;
                 height: 2rem;
                 margin-top: 2%;
                 a {
                     font-size: 200%;
-                }
-            }
-            #base {
-                width: 90%;
-                height: 60%;
-                border-radius: 1rem;
-                #data {
-                    border-radius: 1rem;
                 }
             }
         }

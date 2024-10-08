@@ -1,6 +1,5 @@
 #btn-modal {
     display: none;
-    z-index: -500;
 }
 #btn-modal:checked ~ .modals {
     display: flex;
@@ -87,6 +86,17 @@
 }
 @media screen and (max-width: 500px) {
     .modals {
+        .btn-close {
+            div {
+                width: 2.5rem;
+                height: 2.5rem;
+                margin: 3%;
+                border-radius: 100%;
+                label {
+                    font-size: 300%;
+                }
+            }
+        }
         div {
             div {
                 width: 90%;
