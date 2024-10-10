@@ -27,6 +27,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Arima:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap");
 @import url("https://fonts.cdnfonts.com/css/reigo");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gruppo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chonburi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Potta+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arima:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap");
+@import url("https://fonts.cdnfonts.com/css/reigo");
 .l-m {
   color: #9b57cd;
 }
@@ -35,6 +44,71 @@
   color: #a8be5b;
 }
 
+/*Colores*/
+/*Tipos de letra*/
+.l-m {
+  color: #9b57cd;
+}
+
+.l-v {
+  color: #a8be5b;
+}
+
+@keyframes preloader {
+  100% {
+    transform: scale(2);
+  }
+}
+@keyframes preloader {
+  100% {
+    transform: scale(2);
+  }
+}
+/*@keyframes btn_fullscreen {
+    0% {
+        transform: rotate(none) scale(1);
+    }
+    50% {
+        transform: rotate(50deg) scale(1.1);
+        background-color: $Blanco;
+    }
+    100% {
+        transform: rotate(none) scale(1);
+    }
+}*/
+/*@keyframes logo {
+    0% {
+        transform: translate(0, -100vh);
+    }
+    50% {
+        transform: translate(0, 3vh);
+    }
+    100% {
+        transform:translate(0, 0vh);
+    }
+}*/
+/*@keyframes logo_palpitar {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1); 
+    }
+}*/
+/*@keyframes iz {
+    0% {
+        transform: translateX(-100vw);
+    }
+    50% {
+        transform: translateX(2vw);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}*/
 #loader {
   background-color: #d8d8d8;
   overflow: hidden;
