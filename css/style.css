@@ -245,6 +245,9 @@ html {
 #flexed .boton-modal div label p {
   font-size: 110%;
 }
+#flexed .boton-modal div label:hover {
+  color: #7f0019;
+}
 #flexed #nav {
   z-index: 999;
   text-align: center;
@@ -297,6 +300,9 @@ html {
   font-size: 100%;
   font-weight: 300;
 }
+#flexed #nav #navbarNav #barra ul li a:hover {
+  color: #7f0019;
+}
 #flexed #nav #slogan.abajo {
   background-color: rgba(0, 0, 0, 0.719);
 }
@@ -320,12 +326,22 @@ html {
     font-size: 80%;
   }
   #flexed #nav #slogan p {
-    font-size: 60%;
+    font-size: 65%;
   }
   #flexed #nav #navbarNav #barra {
     width: 95%;
   }
+  #flexed #nav #navbarNav #barra ul {
+    width: 19%;
+    padding: 0;
+    margin: 1%;
+    text-align: center;
+  }
+  #flexed #nav #navbarNav #barra ul li {
+    text-align: center;
+  }
   #flexed #nav #navbarNav #barra ul li a {
+    text-align: center;
     font-size: 70%;
     font-weight: 550;
   }
@@ -356,9 +372,10 @@ html {
   position: fixed;
   justify-content: start;
   align-items: end;
+  z-index: 1000;
 }
 .modals .btn-close div {
-  width: 8.5rem;
+  width: 9.5rem;
   height: 4rem;
   margin: 1.5% 0.6%;
   border-radius: 1rem;
@@ -376,6 +393,10 @@ html {
   align-items: center;
   color: #5c3168;
   font-family: "Quicksand", sans-serif;
+  transition: all 0.5s;
+}
+.modals .btn-close div label:hover {
+  color: #7f0019;
 }
 .modals div {
   width: 100%;
@@ -398,29 +419,128 @@ html {
   justify-content: center;
   align-items: center;
 }
-.modals div div #info-modal h2 {
+.modals div div #info-modal .formuario {
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+  display: none;
+  font-family: "Quicksand", sans-serif;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1001;
+}
+.modals div div #info-modal .formuario .input-field {
+  position: relative;
+  margin-bottom: 6%;
+  width: 80%;
+  height: 3.5rem;
+}
+.modals div div #info-modal .formuario .input-field h3 {
   margin: 3%;
   color: #5c3168;
-  font-family: "Quicksand", sans-serif;
   font-size: 150%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.modals div div #info-modal ul {
+.modals div div #info-modal .formuario .input-field ul {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
   margin: 1%;
   padding: 0;
 }
-.modals div div #info-modal ul li {
+.modals div div #info-modal .formuario .input-field ul li {
   display: inline;
   color: #5c3168;
   font-family: "Quicksand", sans-serif;
   font-size: 110%;
 }
-.modals div div #info-modal #form {
+.modals div div #info-modal .formuario .input-field input {
   width: 100%;
   height: 100%;
+  border-radius: 1rem;
+  font-size: 17px;
+  padding: 0px 10px;
+  border: 2px solid #5c3168;
+  background: transparent;
+  color: #5c3168;
+  outline: none;
+  text-align: center;
+}
+.modals div div #info-modal .formuario .input-field input:focus {
+  border: 2px solid #7f0019;
+}
+.modals div div #info-modal .formuario .input-field input:focus ~ label,
+.modals div div #info-modal .formuario .input-field input:valid ~ label {
+  top: 0;
+  font-size: 15px;
+  padding: 0 6px;
+  background: #ffffff;
+}
+.modals div div #info-modal .formuario .input-field label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #5c3168;
+  font-size: 17px;
+  pointer-events: none;
+  transition: 0.3s;
+}
+.modals div div #info-modal .formuario .input-field label span {
+  margin-left: 3px;
+}
+.modals div div #info-modal .formuario .input-submit {
+  height: 15%;
+  width: 80%;
+  text-align: center;
+}
+.modals div div #info-modal .formuario .input-submit .minimal-button {
+  background-color: transparent;
+  border: 2px solid #5c3168;
+  color: #5c3168;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.modals div div #info-modal .formuario .input-submit .minimal-button:hover {
+  background-color: #7f0019;
+  border: 2px solid #7f0019;
+  color: white;
+}
+.modals div div #info-modal .formuario.activo {
+  display: flex;
+}
+.modals div div #info-modal .exito {
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+  display: none;
+  font-family: "Quicksand", sans-serif;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   z-index: 1001;
+}
+.modals div div #info-modal .exito #icon {
+  font-size: 1000%;
+  color: #5c3168;
+  text-align: center;
+}
+.modals div div #info-modal .exito h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 100%;
+  color: #5c3168;
+}
+.modals div div #info-modal .exito.activo {
+  display: flex;
 }
 
 @media screen and (max-width: 500px) {
@@ -455,6 +575,7 @@ html {
 }
 
 body {
+  transition: all 0.5s;
   overflow-x: hidden;
   background-color: #d8d8d8;
 }
@@ -667,6 +788,7 @@ body #pag5 #carrusel {
   scroll-snap-type: x mandatory;
 }
 body #database {
+  background-color: #d8d8d8;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -674,19 +796,33 @@ body #database {
   justify-content: center;
   align-items: center;
 }
-body #database #base {
-  width: 50rem;
-  height: 50rem;
+body #database table {
+  width: 40%;
+  height: 90%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #5c3168;
-  border-radius: 2rem;
 }
-body #database #base #data {
-  width: 95%;
-  height: 95%;
-  border-radius: 2rem;
+body #database table thead, body #database table #data {
+  background-color: #5c3168;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+body #database table thead tr, body #database table #data tr {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+body #database table thead tr th, body #database table thead tr td, body #database table #data tr th, body #database table #data tr td {
+  border: 2px solid;
+  border-color: #ffffff;
+  color: #ffffff;
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  width: 33%;
 }
 body #database #reload {
   width: 2rem;
@@ -797,16 +933,26 @@ body #link .links a {
     width: 95%;
     height: 60%;
   }
-  body #database #base {
-    width: 90%;
-    height: 50%;
-    border-radius: 1rem;
+  body #database table {
+    width: 98%;
+    height: 90%;
   }
-  body #database #base #data {
-    border-radius: 1rem;
+  body #database table thead tr th, body #database table thead tr td, body #database table #data tr th, body #database table #data tr td {
+    border: 1px solid;
+    font-size: 70%;
   }
   body #database #reload {
-    margin-top: 5%;
+    width: 2rem;
+    height: 2rem;
+    margin-top: 1%;
+    border-radius: 100%;
+    background-color: #5c3168;
+  }
+  body #database #reload a {
+    width: 90%;
+    height: 90%;
+    font-size: 200%;
+    color: #ffffff;
   }
   body #link {
     flex-direction: column;

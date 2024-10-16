@@ -148,3 +148,32 @@ document.body.classList.toggle('dark');
 switchButton.classList.toggle('active');
 nav.classList.toggle('dark');
 });*/
+
+//Formulario
+ const formuario = document.getElementById('formuario');
+ const exito = document.getElementById('exito');
+ const database = document.getElementById('base');
+
+ formuario.addEventListener('submit', async(e) => {
+	e.preventDefault();
+try {
+	const respuesta = await fetch('https://api.sheetbest.com/sheets/84c5c2ef-9605-4500-b76e-555c83e9e5b9', {
+		method: 'POST',
+		mode: 'cors',
+		headers: {
+			'Content-Type': 'application/json'
+		},
+		body: JSON.stringify({
+			'Nombre': formuario.Nombre.value,
+			'Email': formuario.Email.value,
+			'NFamiliares': formuario.NF.value
+		})
+	});
+	const contenido = await respuesta.json();
+	console.log(contenido);
+} catch(error){
+	console.log(error);
+}
+	formuario.classList.remove('activo');
+	exito.classList.add('activo');
+ });

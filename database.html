@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+<head>    <meta charset="UTF-8">
     <link rel="shortcut icon" href="img/icons/icon.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
@@ -10,20 +9,24 @@
     <meta name="theme-color" content="#d8d8d8" />
     <meta name="msapplication-navbutton-color" content="#d8d8d8" />
     <meta name="apple-mobile-web-app-status-bar-style" content="#d8d8d8" />
-    <title>Base de datos</title>
+    <title>Invitacion</title>
 </head>
 <body>
-    <section id="database">
-        <div id="base">
-            <iframe id="data" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSXzjPyRYPBbl_MVLp93DrNmdqOVQ_i_YcsbJBQax5LkcMP6U1WpVY6mNis6cWu3YBffvVdLRWoSOWY/pubhtml?widget=true&amp;headers=false"></iframe>
-        </div>
-        <div id="reload">
-           <a href="javascript:document.location.reload();">
-                <ion-icon name="refresh-circle-outline"></ion-icon>
-           </a>
-        </div>
-    </section>
-    <script  type = "module"  src = " https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js " > </script> 
-    <script nomodule  src  = " https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js " > </script>
+  <div id="database">
+    <table>
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Email</th>
+          <th>N/Famiilares</th>
+        </tr>
+      </thead>
+      <tbody id="data">
+      </tbody>
+    </table>
+  </div>
+  <script src="js/database.js"></script>
+  <script  type = "module"  src = " https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js " > </script> 
+  <script nomodule  src  = " https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js " > </script>
 </body>
 </html>

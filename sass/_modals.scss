@@ -17,8 +17,9 @@
         position: fixed;
         justify-content: start;
         align-items: end;
+        z-index: 1000;
         div {
-            width: 8.5rem;
+            width: 9.5rem;
             height: 4rem;
             margin: 1.5% 0.6%;
             border-radius: 1rem;
@@ -35,6 +36,10 @@
                 align-items: center;
                 color: $Secundario3;
                 font-family: $letra2;
+                transition: all 0.5s;
+            }
+            label:hover {
+                color: $Secundario4;
             }
         }
     }
@@ -56,29 +61,128 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                h2 {
-                    margin: 3%;
-                    color: $Secundario3;
-                    font-family: $letra2;
-                    font-size: 150%;
-                }
-                ul {
+                .formuario {
                     width: 100%;
-                    display: flex;
-                    justify-content: space-evenly;
-                    margin: 1%;
-                    padding: 0;
-                    li {
-                        display: inline;
-                        color: $Secundario3;
-                        font-family: $letra2;
-                        font-size: 110%;
+                    height: 100%;
+                    padding: 5%;
+                    display: none;
+                    font-family: $letra2;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    z-index: 1001;
+                    .input-field{
+                        position: relative;
+                        margin-bottom: 6%;
+                        width: 80%;
+                        height: 3.5rem;
+                        h3 {
+                            margin: 3%;
+                            color: $Secundario3;
+                            font-size: 150%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        ul {
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-evenly;
+                            margin: 1%;
+                            padding: 0;
+                            li {
+                                display: inline;
+                                color: $Secundario3;
+                                font-family: $letra2;
+                                font-size: 110%;
+                            }
+                        }
+                        input{
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 1rem;
+                            font-size: 17px;
+                            padding: 0px 10px;
+                            border: 2px solid #5c3168;
+                            background: transparent;
+                            color: #5c3168;
+                            outline: none;
+                            text-align: center;
+                        }
+                        input:focus{
+                            border: 2px solid #7f0019;
+                        }
+                        input:focus ~ label,
+                        input:valid ~ label{
+                            top: 0;
+                            font-size: 15px;
+                            padding: 0 6px;
+                            background: $Secundario;
+                        }
+                        label{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            color: #5c3168;
+                            font-size: 17px;
+                            pointer-events: none;
+                            transition: .3s;
+                            span {
+                                margin-left: 3px;
+                            }
+                        }
+                    }
+                    .input-submit {
+                        height: 15%;
+                        width: 80%;
+                        text-align: center;
+                        .minimal-button {
+                            background-color: transparent;
+                            border: 2px solid #5c3168;
+                            color: #5c3168;
+                            padding: 10px 20px;
+                            font-size: 16px;
+                            cursor: pointer;
+                            border-radius: 5px;
+                            transition: background-color 0.3s, color 0.3s;
+                        }
+                        .minimal-button:hover {
+                            background-color: #7f0019;
+                            border: 2px solid #7f0019;
+                            color: white;
+                        }
                     }
                 }
-                #form {
-                    width:100%;
+                .formuario.activo{
+                    display: flex;
+                }
+                .exito {
+                    width: 100%;
                     height: 100%;
+                    padding: 5%;
+                    display: none;
+                    font-family: $letra2;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
                     z-index: 1001;
+                    #icon {
+                        font-size: 1000%;
+                        color: #5c3168;
+                        text-align: center;
+                    }
+                    h1 {
+                        width: 100%;
+                        text-align: center;
+                        font-size: 100%;
+                        color: $Secundario3;
+                    }
+                }
+                .exito.activo {
+                    display: flex;
                 }
             }
         }

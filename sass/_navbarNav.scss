@@ -35,6 +35,9 @@
                     font-size: 110%;
                 }
             }
+            label:hover {
+                color: $Secundario4;
+            }
         }
     }
     #nav {
@@ -84,6 +87,9 @@
                             font-size: 100%; 
                             font-weight: 300;
                         }
+                        a:hover {
+                            color: $Secundario4;
+                        }
                     }
                 }
             }
@@ -119,15 +125,21 @@
     #nav {
         #slogan {
             p {
-                font-size: 60%;
+                font-size: 65%;
             }
         }
         #navbarNav {
             #barra {
                 width: 95%;
                 ul {
+                    width: 19%;
+                    padding: 0;
+                    margin: 1%;
+                    text-align: center;
                     li {
+                        text-align: center;
                         a {
+                            text-align: center;
                             font-size: 70%; 
                             font-weight: 550;
                         }

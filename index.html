@@ -90,13 +90,34 @@
         <div>
             <div>
                 <div id="info-modal">
-                        <h2>Prohibido</h2>
-                    <ul>
-                        <li>Invalidos</li>
-                        <li>Borrachos</li>
-                        <li>Eriks</li>
-                    </ul>
-                    <iframe id="form" src="https://docs.google.com/forms/d/e/1FAIpQLSfku2W21PRjkf2STiuui7IWjfqkL7t0m2k6ePClTh76ZwXn1A/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+                    <form class="formuario activo" id="formuario">
+                        <div class="input-field">
+                            <h3><ion-icon name="warning-outline"></ion-icon><span>Prohibido</span><ion-icon name="warning-outline"></ion-icon></h3>
+                            <ul>
+                                <li>Borrachos</li>
+                                <li>Eriks</li>
+                            </ul>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" name="Nombre" required spellcheck="false">
+                            <label><ion-icon name="person-outline"></ion-icon><span>Nombre</span></label>
+                        </div>
+                        <div class="input-field">
+                            <input type="email" name="Email" required spellcheck="false">
+                            <label><ion-icon name="mail-outline"></ion-icon><span>Email</span></label>
+                        </div>
+                        <div class="input-field">
+                            <input type="number" name="NF" value="0" min="1" max="4" required spellcheck="false">
+                            <label><ion-icon name="people-outline"></ion-icon><span>Numero de familia</span></label>
+                        </div>
+                        <div class="input-submit">
+                            <input type="submit" value="Enviar" class="minimal-button">
+                        </div>
+                    </form>
+                    <div class="exito" id="exito">
+                        <ion-icon id="icon" name="checkmark-done-circle-outline"></ion-icon>
+                        <h1>Familia registrada</h1>
+                    </div>
                 </div>
             </div>
         </div>

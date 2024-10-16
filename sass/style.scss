@@ -16,6 +16,7 @@
     background: $Primario;
 }
 body{
+    transition: all 0.5s;
     overflow-x: hidden;
     background-color: $Primario;
     .pags {
@@ -228,24 +229,40 @@ body{
     }
 
     #database {
+        background-color: $Primario;
         width: 100vw;
         height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        #base {
-            width: 50rem;
-            height: 50rem;
+        table {
+            width: 40%;
+            height: 90%;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            background-color: $Secundario3;
-            border-radius: 2rem;
-            #data {
-                width: 95%;
-                height: 95%;
-                border-radius: 2rem;
+            thead, #data {
+                background-color: $Secundario3;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 100%;
+                tr {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-around;
+                    th, td {
+                        border: 2px solid;
+                        border-color: $Secundario;
+                        color: $Secundario;
+                        font-family: $letra2;
+                        text-align: center;
+                        width: 33%;
+                    }
+                    
+                }
             }
         }
         #reload {
@@ -373,16 +390,31 @@ body{
         }
 
         #database {
-            #base {
-                width: 90%;
-                height: 50%;
-                border-radius: 1rem;
-                #data {
-                    border-radius: 1rem;
+            table {
+                width: 98%;
+                height: 90%;
+                thead, #data {
+                    tr {
+                        th, td {
+                            border: 1px solid;
+                            font-size: 70%;
+                        }
+                        
+                    }
                 }
             }
             #reload {
-                margin-top: 5%;
+                width: 2rem;
+                height: 2rem;
+                margin-top: 1%;
+                border-radius: 100%;
+                background-color: $Secundario3;
+                a {
+                    width: 90%;
+                    height: 90%;
+                    font-size: 200%;
+                    color: $Secundario;
+                }
             }
         }
         #link {
