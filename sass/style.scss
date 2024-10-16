@@ -278,6 +278,10 @@ body{
                 color: $Secundario;
             }
         }
+        #reload:hover {
+            rotate: 180deg;
+            transition: all 1s;
+        }
     }
     #link {
         width: 100vw;
@@ -397,7 +401,7 @@ body{
                     tr {
                         th, td {
                             border: 1px solid;
-                            font-size: 70%;
+                            font-size: 65%;
                         }
                         
                     }

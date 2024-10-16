@@ -837,6 +837,10 @@ body #database #reload a {
   font-size: 200%;
   color: #ffffff;
 }
+body #database #reload:hover {
+  rotate: 180deg;
+  transition: all 1s;
+}
 body #link {
   width: 100vw;
   height: 100vh;
@@ -939,7 +943,7 @@ body #link .links a {
   }
   body #database table thead tr th, body #database table thead tr td, body #database table #data tr th, body #database table #data tr td {
     border: 1px solid;
-    font-size: 70%;
+    font-size: 65%;
   }
   body #database #reload {
     width: 2rem;
