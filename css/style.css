@@ -436,6 +436,13 @@ html {
   width: 80%;
   height: 3.5rem;
 }
+.modals div div #info-modal .formuario .input-field input::-webkit-inner-spin-button,
+.modals div div #info-modal .formuario .input-field input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+.modals div div #info-modal .formuario .input-field input[type=number] {
+  -moz-appearance: textfield;
+}
 .modals div div #info-modal .formuario .input-field h3 {
   margin: 3%;
   color: #5c3168;
