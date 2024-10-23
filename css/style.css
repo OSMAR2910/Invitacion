@@ -375,7 +375,7 @@ html {
   z-index: 1000;
 }
 .modals .btn-close div {
-  width: 9.5rem;
+  width: 8.5rem;
   height: 4rem;
   margin: 1.5% 0.6%;
   border-radius: 1rem;
@@ -533,11 +533,14 @@ html {
   color: #5c3168;
   text-align: center;
 }
-.modals div div #info-modal .exito h1 {
+.modals div div #info-modal .exito h1, .modals div div #info-modal .exito h3 {
   width: 100%;
   text-align: center;
   font-size: 100%;
   color: #5c3168;
+}
+.modals div div #info-modal .exito h3 {
+  font-size: 75%;
 }
 .modals div div #info-modal .exito.activo {
   display: flex;
@@ -817,12 +820,24 @@ body #database table thead tr, body #database table #data tr {
   justify-content: space-around;
 }
 body #database table thead tr th, body #database table thead tr td, body #database table #data tr th, body #database table #data tr td {
-  border: 2px solid;
+  padding: 1%;
+  border: 3px solid;
   border-color: #ffffff;
   color: #ffffff;
   font-family: "Quicksand", sans-serif;
   text-align: center;
   width: 33%;
+}
+body #database table thead tr th .icon, body #database table thead tr td .icon, body #database table #data tr th .icon, body #database table #data tr td .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body #database table thead tr th span, body #database table thead tr td span, body #database table #data tr th span, body #database table #data tr td span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
 }
 body #database #reload {
   width: 2rem;
@@ -917,9 +932,12 @@ body #link .links a {
     margin-top: 5%;
   }
   body #pag3 #fecha a {
-    font-size: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #7f0019;
     font-family: "Arima", system-ui;
+    font-size: 80%;
     font-weight: 550;
   }
   body #pag4 #paleta {

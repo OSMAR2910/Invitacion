@@ -165,7 +165,7 @@ try {
 		},
 		body: JSON.stringify({
 			'Nombre': formuario.Nombre.value,
-			'Email': formuario.Email.value,
+			'Numero': formuario.Numero.value,
 			'NFamiliares': formuario.NF.value
 		})
 	});

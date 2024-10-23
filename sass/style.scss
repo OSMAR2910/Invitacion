@@ -254,12 +254,24 @@ body{
                     display: flex;
                     justify-content: space-around;
                     th, td {
-                        border: 2px solid;
+                        padding: 1%;
+                        border: 3px solid;
                         border-color: $Secundario;
                         color: $Secundario;
                         font-family: $letra2;
                         text-align: center;
                         width: 33%;
+                        .icon {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        span {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin-left: 5px;
+                        }
                     }
                     
                 }
@@ -364,9 +376,12 @@ body{
                 border-radius: 1rem;
                 margin-top: 5%;
                 a {
-                    font-size: 80%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     color: $Secundario4;
                     font-family: $lerea1;
+                    font-size: 80%;
                     font-weight: 550;
                 }
             }
