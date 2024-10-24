@@ -36,6 +36,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Arima:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap");
 @import url("https://fonts.cdnfonts.com/css/reigo");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gruppo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chonburi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Potta+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arima:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap");
+@import url("https://fonts.cdnfonts.com/css/reigo");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gruppo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chonburi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Potta+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arima:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap");
+@import url("https://fonts.cdnfonts.com/css/reigo");
 .l-m {
   color: #9b57cd;
 }
@@ -76,7 +94,7 @@
         transform: rotate(none) scale(1);
     }
 }*/
-/*@keyframes logo {
+/*@keyframes btn-modal {
     0% {
         transform: translate(0, -100vh);
     }
@@ -109,6 +127,55 @@
         transform: translateX(0);
     }
 }*/
+@keyframes exito {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(5%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes form {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-5%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+@keyframes modal1 {
+  0% {
+    transform: translateY(-100%);
+  }
+  50% {
+    transform: translateY(5%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes btn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes glob {
+  0% {
+    transform: translateY(-5%);
+  }
+  100% {
+    transform: translateY(5%);
+  }
+}
 #loader {
   background-color: #d8d8d8;
   overflow: hidden;
@@ -138,6 +205,120 @@
   animation: preloader 0.6s ease-in-out alternate 0.4s infinite;
 }
 
+/*Colores*/
+/*Tipos de letra*/
+.l-m {
+  color: #9b57cd;
+}
+
+.l-v {
+  color: #a8be5b;
+}
+
+@keyframes preloader {
+  100% {
+    transform: scale(2);
+  }
+}
+@keyframes preloader {
+  100% {
+    transform: scale(2);
+  }
+}
+/*@keyframes btn_fullscreen {
+    0% {
+        transform: rotate(none) scale(1);
+    }
+    50% {
+        transform: rotate(50deg) scale(1.1);
+        background-color: $Blanco;
+    }
+    100% {
+        transform: rotate(none) scale(1);
+    }
+}*/
+/*@keyframes btn-modal {
+    0% {
+        transform: translate(0, -100vh);
+    }
+    50% {
+        transform: translate(0, 3vh);
+    }
+    100% {
+        transform:translate(0, 0vh);
+    }
+}*/
+/*@keyframes logo_palpitar {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1); 
+    }
+}*/
+/*@keyframes iz {
+    0% {
+        transform: translateX(-100vw);
+    }
+    50% {
+        transform: translateX(2vw);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}*/
+@keyframes exito {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(5%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes form {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-5%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+@keyframes modal1 {
+  0% {
+    transform: translateY(-100%);
+  }
+  50% {
+    transform: translateY(5%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes btn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes glob {
+  0% {
+    transform: translateY(-5%);
+  }
+  100% {
+    transform: translateY(5%);
+  }
+}
 html {
   --color-white: #ffffff;
   --color-black: #191919;
@@ -212,14 +393,14 @@ html {
 #flexed * {
   transition: all 0.5s;
 }
-#flexed .boton-modal {
+#flexed #btn-modalop {
   width: 100vw;
   height: 0vh;
   display: flex;
   position: fixed;
-  justify-content: end;
+  justify-content: start;
 }
-#flexed .boton-modal div {
+#flexed #btn-modalop div {
   width: 6.5rem;
   height: 2rem;
   margin: 1.5%;
@@ -229,9 +410,8 @@ html {
   justify-content: center;
   align-items: center;
   background-color: #ffffff;
-  z-index: 5000;
 }
-#flexed .boton-modal div label {
+#flexed #btn-modalop div label {
   width: 100%;
   height: 100%;
   display: flex;
@@ -239,14 +419,30 @@ html {
   align-items: center;
   color: #5c3168;
 }
-#flexed .boton-modal div label ion-icon {
+#flexed #btn-modalop div label ion-icon {
   font-size: 350%;
 }
-#flexed .boton-modal div label p {
+#flexed #btn-modalop div label p {
   font-size: 110%;
 }
-#flexed .boton-modal div label:hover {
+#flexed #btn-modalop div label:hover {
   color: #7f0019;
+}
+#flexed #btn-modalop.abajo2 {
+  width: 100vw;
+  height: 0vh;
+  padding: 0;
+  margin: 0;
+}
+#flexed #btn-modalop.abajo2 div {
+  width: 3.5rem;
+  height: 3.5rem;
+  padding: 0;
+  margin: 1.5%;
+  border-radius: 100%;
+}
+#flexed #btn-modalop.abajo2 div label p {
+  font-size: 0;
 }
 #flexed #nav {
   z-index: 999;
@@ -269,6 +465,14 @@ html {
   font-family: "Quicksand", sans-serif;
   font-size: 70%;
   letter-spacing: 0.3em;
+}
+#flexed #nav #slogan.abajo1 {
+  background-color: rgba(0, 0, 0, 0.719);
+}
+#flexed #nav #slogan.abajo1 p {
+  padding: 0;
+  margin: 0;
+  font-size: 0;
 }
 #flexed #nav #navbarNav {
   width: 100%;
@@ -302,14 +506,7 @@ html {
 }
 #flexed #nav #navbarNav #barra ul li a:hover {
   color: #7f0019;
-}
-#flexed #nav #slogan.abajo {
-  background-color: rgba(0, 0, 0, 0.719);
-}
-#flexed #nav #slogan.abajo p {
-  padding: 0;
-  margin: 0;
-  font-size: 0;
+  font-size: 105%;
 }
 
 @media screen and (max-width: 500px) {
@@ -345,12 +542,142 @@ html {
     font-size: 70%;
     font-weight: 550;
   }
+  #flexed #nav #navbarNav #barra ul li a:hover {
+    font-size: 75%;
+  }
   #flexed #nav #slogan.abajo {
     margin-bottom: 0;
   }
 }
+/*Colores*/
+/*Tipos de letra*/
+.l-m {
+  color: #9b57cd;
+}
+
+.l-v {
+  color: #a8be5b;
+}
+
+@keyframes preloader {
+  100% {
+    transform: scale(2);
+  }
+}
+@keyframes preloader {
+  100% {
+    transform: scale(2);
+  }
+}
+/*@keyframes btn_fullscreen {
+    0% {
+        transform: rotate(none) scale(1);
+    }
+    50% {
+        transform: rotate(50deg) scale(1.1);
+        background-color: $Blanco;
+    }
+    100% {
+        transform: rotate(none) scale(1);
+    }
+}*/
+/*@keyframes btn-modal {
+    0% {
+        transform: translate(0, -100vh);
+    }
+    50% {
+        transform: translate(0, 3vh);
+    }
+    100% {
+        transform:translate(0, 0vh);
+    }
+}*/
+/*@keyframes logo_palpitar {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1); 
+    }
+}*/
+/*@keyframes iz {
+    0% {
+        transform: translateX(-100vw);
+    }
+    50% {
+        transform: translateX(2vw);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}*/
+@keyframes exito {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(5%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes form {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-5%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+@keyframes modal1 {
+  0% {
+    transform: translateY(-100%);
+  }
+  50% {
+    transform: translateY(5%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes btn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes glob {
+  0% {
+    transform: translateY(-5%);
+  }
+  100% {
+    transform: translateY(5%);
+  }
+}
 #btn-modal {
   display: none;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  transition-behavior: display 0.5s ease allow-discrete;
+}
+#btn-modal .btn-close {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  transition-behavior: display 0.5s ease allow-discrete;
+}
+#btn-modal .infmodcont {
+  transform: none;
+  transition: all 0.4s ease-in-out;
+  transition-behavior: display 0.4s ease allow-discrete;
 }
 
 #btn-modal:checked ~ .modals {
@@ -366,18 +693,20 @@ html {
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.719);
+  animation: btn 0.9s ease-in-out;
 }
 .modals .btn-close {
   display: flex;
   position: fixed;
   justify-content: start;
-  align-items: end;
+  align-items: start;
   z-index: 1000;
+  animation: btn 0.9s ease-in-out;
 }
 .modals .btn-close div {
   width: 8.5rem;
   height: 4rem;
-  margin: 1.5% 0.6%;
+  margin: 1.5% 1.5%;
   border-radius: 1rem;
   display: flex;
   justify-content: center;
@@ -398,6 +727,20 @@ html {
 .modals .btn-close div label:hover {
   color: #7f0019;
 }
+.modals .btn-close.abajo3 {
+  width: 100vw;
+  height: 0vh;
+  padding: 0;
+  margin: 0;
+}
+.modals .btn-close.abajo3 div {
+  width: 3.5rem;
+  height: 3.5rem;
+  padding: 0;
+  margin: 1.5%;
+  border-radius: 100%;
+}
+.modals .infmodcont,
 .modals div {
   width: 100%;
   height: 100%;
@@ -405,21 +748,26 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  animation: modal1 1s ease-in-out;
 }
-.modals div div {
+.modals .infmodcont .cont-infom,
+.modals div .cont-infom {
   width: 30%;
   height: 50%;
   border-radius: 1rem;
   background-color: #ffffff;
 }
-.modals div div #info-modal {
+.modals .infmodcont .cont-infom #info-modal,
+.modals div .cont-infom #info-modal {
   width: 90%;
   height: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
-.modals div div #info-modal .formuario {
+.modals .infmodcont .cont-infom #info-modal .formuario,
+.modals div .cont-infom #info-modal .formuario {
   width: 100%;
   height: 100%;
   padding: 5%;
@@ -430,20 +778,25 @@ html {
   flex-direction: column;
   z-index: 1001;
 }
-.modals div div #info-modal .formuario .input-field {
+.modals .infmodcont .cont-infom #info-modal .formuario .input-field,
+.modals div .cont-infom #info-modal .formuario .input-field {
   position: relative;
   margin-bottom: 6%;
   width: 80%;
   height: 3.5rem;
 }
-.modals div div #info-modal .formuario .input-field input::-webkit-inner-spin-button,
-.modals div div #info-modal .formuario .input-field input::-webkit-outer-spin-button {
+.modals .infmodcont .cont-infom #info-modal .formuario .input-field input::-webkit-inner-spin-button,
+.modals .infmodcont .cont-infom #info-modal .formuario .input-field input::-webkit-outer-spin-button,
+.modals div .cont-infom #info-modal .formuario .input-field input::-webkit-inner-spin-button,
+.modals div .cont-infom #info-modal .formuario .input-field input::-webkit-outer-spin-button {
   -webkit-appearance: none;
 }
-.modals div div #info-modal .formuario .input-field input[type=number] {
+.modals .infmodcont .cont-infom #info-modal .formuario .input-field input[type=number],
+.modals div .cont-infom #info-modal .formuario .input-field input[type=number] {
   -moz-appearance: textfield;
 }
-.modals div div #info-modal .formuario .input-field h3 {
+.modals .infmodcont .cont-infom #info-modal .formuario .input-field h3,
+.modals div .cont-infom #info-modal .formuario .input-field h3 {
   margin: 3%;
   color: #5c3168;
   font-size: 150%;
@@ -451,20 +804,23 @@ html {
   justify-content: center;
   align-items: center;
 }
-.modals div div #info-modal .formuario .input-field ul {
+.modals .infmodcont .cont-infom #info-modal .formuario .input-field ul,
+.modals div .cont-infom #info-modal .formuario .input-field ul {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
   margin: 1%;
   padding: 0;
 }
-.modals div div #info-modal .formuario .input-field ul li {
+.modals .infmodcont .cont-infom #info-modal .formuario .input-field ul li,
+.modals div .cont-infom #info-modal .formuario .input-field ul li {
   display: inline;
   color: #5c3168;
   font-family: "Quicksand", sans-serif;
   font-size: 110%;
 }
-.modals div div #info-modal .formuario .input-field input {
+.modals .infmodcont .cont-infom #info-modal .formuario .input-field input,
+.modals div .cont-infom #info-modal .formuario .input-field input {
   width: 100%;
   height: 100%;
   border-radius: 1rem;
@@ -476,17 +832,21 @@ html {
   outline: none;
   text-align: center;
 }
-.modals div div #info-modal .formuario .input-field input:focus {
+.modals .infmodcont .cont-infom #info-modal .formuario .input-field input:focus,
+.modals div .cont-infom #info-modal .formuario .input-field input:focus {
   border: 2px solid #7f0019;
 }
-.modals div div #info-modal .formuario .input-field input:focus ~ label,
-.modals div div #info-modal .formuario .input-field input:valid ~ label {
+.modals .infmodcont .cont-infom #info-modal .formuario .input-field input:focus ~ label,
+.modals .infmodcont .cont-infom #info-modal .formuario .input-field input:valid ~ label,
+.modals div .cont-infom #info-modal .formuario .input-field input:focus ~ label,
+.modals div .cont-infom #info-modal .formuario .input-field input:valid ~ label {
   top: 0;
   font-size: 15px;
   padding: 0 6px;
   background: #ffffff;
 }
-.modals div div #info-modal .formuario .input-field label {
+.modals .infmodcont .cont-infom #info-modal .formuario .input-field label,
+.modals div .cont-infom #info-modal .formuario .input-field label {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -498,15 +858,18 @@ html {
   pointer-events: none;
   transition: 0.3s;
 }
-.modals div div #info-modal .formuario .input-field label span {
+.modals .infmodcont .cont-infom #info-modal .formuario .input-field label span,
+.modals div .cont-infom #info-modal .formuario .input-field label span {
   margin-left: 3px;
 }
-.modals div div #info-modal .formuario .input-submit {
+.modals .infmodcont .cont-infom #info-modal .formuario .input-submit,
+.modals div .cont-infom #info-modal .formuario .input-submit {
   height: 15%;
   width: 80%;
   text-align: center;
 }
-.modals div div #info-modal .formuario .input-submit .minimal-button {
+.modals .infmodcont .cont-infom #info-modal .formuario .input-submit .minimal-button,
+.modals div .cont-infom #info-modal .formuario .input-submit .minimal-button {
   background-color: transparent;
   border: 2px solid #5c3168;
   color: #5c3168;
@@ -516,15 +879,24 @@ html {
   border-radius: 5px;
   transition: background-color 0.3s, color 0.3s;
 }
-.modals div div #info-modal .formuario .input-submit .minimal-button:hover {
+.modals .infmodcont .cont-infom #info-modal .formuario .input-submit .minimal-button:hover,
+.modals div .cont-infom #info-modal .formuario .input-submit .minimal-button:hover {
   background-color: #7f0019;
   border: 2px solid #7f0019;
   color: white;
+  box-shadow: 0px 0px 10px 0px rgb(127, 0, 25);
 }
-.modals div div #info-modal .formuario.activo {
+.modals .infmodcont .cont-infom #info-modal .formuario.activof,
+.modals div .cont-infom #info-modal .formuario.activof {
   display: flex;
 }
-.modals div div #info-modal .exito {
+.modals .infmodcont .cont-infom #info-modal .formuario.animacion,
+.modals div .cont-infom #info-modal .formuario.animacion {
+  animation: form 0.8s ease-in-out;
+  animation-fill-mode: forwards;
+}
+.modals .infmodcont .cont-infom #info-modal .exito,
+.modals div .cont-infom #info-modal .exito {
   width: 100%;
   height: 100%;
   padding: 5%;
@@ -534,22 +906,29 @@ html {
   align-items: center;
   flex-direction: column;
   z-index: 1001;
+  animation: exito 0.8s ease-in-out;
 }
-.modals div div #info-modal .exito #icon {
+.modals .infmodcont .cont-infom #info-modal .exito #icon,
+.modals div .cont-infom #info-modal .exito #icon {
   font-size: 1000%;
   color: #5c3168;
   text-align: center;
 }
-.modals div div #info-modal .exito h1, .modals div div #info-modal .exito h3 {
+.modals .infmodcont .cont-infom #info-modal .exito h1,
+.modals .infmodcont .cont-infom #info-modal .exito h3,
+.modals div .cont-infom #info-modal .exito h1,
+.modals div .cont-infom #info-modal .exito h3 {
   width: 100%;
   text-align: center;
   font-size: 100%;
   color: #5c3168;
 }
-.modals div div #info-modal .exito h3 {
+.modals .infmodcont .cont-infom #info-modal .exito h3,
+.modals div .cont-infom #info-modal .exito h3 {
   font-size: 75%;
 }
-.modals div div #info-modal .exito.activo {
+.modals .infmodcont .cont-infom #info-modal .exito.activof,
+.modals div .cont-infom #info-modal .exito.activof {
   display: flex;
 }
 
@@ -563,7 +942,7 @@ html {
   .modals .btn-close div label {
     font-size: 300%;
   }
-  .modals div div {
+  .modals .infmodcont .cont-infom {
     width: 90%;
     height: 50%;
   }
@@ -588,6 +967,7 @@ body {
   transition: all 0.5s;
   overflow-x: hidden;
   background-color: #d8d8d8;
+  background-image: url(../img/fondo.png);
 }
 body .pags {
   width: 100vw;
@@ -600,23 +980,40 @@ body #pag1 {
 body #pag1 main {
   width: 100%;
   height: 100%;
-  background-image: url(../img/2.1.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+body #pag1 main .globs {
+  width: 50%;
+  height: 100%;
+  z-index: -100;
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
+  animation: glob 10s ease-in-out alternate infinite;
+}
+body #pag1 main #gob1 {
+  background-image: url(../img/2.1-columna-1.png);
+}
+body #pag1 main #gob2 {
+  background-image: url(../img/2.1-columna-2.png);
+}
+body #pag1 main #titulo {
+  width: 100%;
+  display: flex;
+  color: #7f0019;
+  position: absolute;
+  flex-direction: column;
   font-size: 120%;
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: italic;
-  flex-direction: column;
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  color: #7f0019;
-  text-align: center;
 }
-body #pag1 main h1, body #pag1 main h2 {
+body #pag1 main #titulo h1, body #pag1 main #titulo h2 {
   margin: 0;
   padding: 0.5%;
 }

@@ -52,69 +52,16 @@ document.body.classList.add(hasCustomCursorClass);
 //Aniscroll nav
 window.addEventListener("scroll", function() {
 	var slogan = document.querySelector("#slogan");
-	slogan.classList.toggle("abajo", window.scrollY > 0);
+	slogan.classList.toggle("abajo1", window.scrollY > 0);
 })
-
-/*//Modal1
-const abrirmodal = document.querySelector("#button_cv_abrir");
-const cerrarmodal = document.querySelector("#button_cv_cerrar");
-const modal = document.querySelector("#modal");
-abrirmodal.addEventListener("click", () => {
-modal.showModal();
+window.addEventListener("scroll", function() {
+	var btnmodalop = document.querySelector("#btn-modalop");
+	btnmodalop.classList.toggle("abajo2", window.scrollY > 0);
 })
-cerrarmodal.addEventListener("click", () => {
-	modal.close();
-})*/
-
-/*//Animaciones
-window.addEventListener('scroll', function() {
-let animacion = document.getElementById("pro_cont");
-let posicionObj1 = animacion.getBoundingClientRect().top;
-let tamañoDePantalla = window.innerHeight / 1;
-if(posicionObj1 < tamañoDePantalla) {
-	animacion.style.animation = "iz 2s ease-out"
-}
+window.addEventListener("scroll", function() {
+	var btnclose = document.querySelector(".btn-close");
+	btnclose.classList.toggle("abajo3", window.scrollY > 0);
 })
-window.addEventListener('scroll', function() {
-let animacion = document.getElementById("len_cont");
-let posicionObj1 = animacion.getBoundingClientRect().top;
-let tamañoDePantalla = window.innerHeight / 1;
-if(posicionObj1 < tamañoDePantalla) {
-	animacion.style.animation = "iz 2s ease-out"
-}
-})
-window.addEventListener('scroll', function() {
-let animacion = document.getElementById("tec_cont_cont1");
-let posicionObj1 = animacion.getBoundingClientRect().top;
-let tamañoDePantalla = window.innerHeight / 1;
-if(posicionObj1 < tamañoDePantalla) {
-	animacion.style.animation = "iz 2s ease-out"
-}
-})
-window.addEventListener('scroll', function() {
-let animacion = document.getElementById("tec_cont_cont2");
-let posicionObj1 = animacion.getBoundingClientRect().top;
-let tamañoDePantalla = window.innerHeight / 1;
-if(posicionObj1 < tamañoDePantalla) {
-	animacion.style.animation = "iz 2s ease-out"
-}
-})
-window.addEventListener('scroll', function() {
-let animacion = document.getElementById("res_cont_cont");
-let posicionObj1 = animacion.getBoundingClientRect().top;
-let tamañoDePantalla = window.innerHeight / 1;
-if(posicionObj1 < tamañoDePantalla) {
-	animacion.style.animation = "iz 2s ease-out"
-}
-})
-window.addEventListener('scroll', function() {
-	let animacion = document.getElementById("con_cont");
-	let posicionObj1 = animacion.getBoundingClientRect().top;
-	let tamañoDePantalla = window.innerHeight / 1;
-	if(posicionObj1 < tamañoDePantalla) {
-		animacion.style.animation = "iz 2s ease-out"
-	}
-})*/
 
 /*//fullscreen
 var box = document.getElementById('in'),
@@ -149,10 +96,31 @@ switchButton.classList.toggle('active');
 nav.classList.toggle('dark');
 });*/
 
+//Boton animacion
+var btnsubmit = document.getElementById('btn-submit'), 
+    form = document.getElementById('formuario'),
+	contador=0;
+
+	function cambio()
+	{
+		if(contador==0)
+		{
+			form.classList.add('animacion')
+			contador=1;
+		}
+		else{
+			caja.classList.remove('animacion');
+			contador=0;
+		}
+	}
+
+	btnsubmit.addEventListener('click',cambio,'true');
+	
 //Formulario
  const formuario = document.getElementById('formuario');
  const exito = document.getElementById('exito');
  const database = document.getElementById('base');
+ 
 
  formuario.addEventListener('submit', async(e) => {
 	e.preventDefault();
@@ -171,9 +139,13 @@ try {
 	});
 	const contenido = await respuesta.json();
 	console.log(contenido);
-} catch(error){
+} 
+catch(error){
 	console.log(error);
 }
-	formuario.classList.remove('activo');
-	exito.classList.add('activo');
+
+	formuario.classList.remove('activof');
+	exito.classList.add('activof');
+	
  });
+

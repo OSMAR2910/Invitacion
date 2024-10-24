@@ -24,7 +24,7 @@
         </div>
     </section>
     <section id="flexed">
-        <div class="boton-modal">
+        <div id="btn-modalop" class="boton-modal">
             <div>
                 <label for="btn-modal">
                     <p>Registrar familia</p>
@@ -87,10 +87,10 @@
                 </label>
             </div>
         </div>
-        <div>
-            <div>
+        <div class="infmodcont">
+            <div class="cont-infom">
                 <div id="info-modal">
-                    <form class="formuario activo" id="formuario">
+                    <form class="formuario activof" id="formuario">
                         <div class="input-field">
                             <h3><ion-icon name="warning-outline"></ion-icon><span>Prohibido</span><ion-icon name="warning-outline"></ion-icon></h3>
                             <ul>
@@ -111,7 +111,7 @@
                             <label><ion-icon name="people-outline"></ion-icon><span>Numero de familia</span></label>
                         </div>
                         <div class="input-submit">
-                            <input type="submit" value="Enviar" class="minimal-button">
+                            <input type="submit" value="Enviar" class="minimal-button" id="btn-submit">
                         </div>
                     </form>
                     <div class="exito" id="exito">
@@ -125,9 +125,13 @@
     </div>
 
     <section class="pags" id="pag1">
-        <main>
-            <h2>Estas invitado</h2>
-            <h1>Inauguracion de nuestra casa</h1>
+        <main>  
+            <div class="globs" id="gob1"></div>
+            <div class="globs" id="gob2"></div>
+            <div id="titulo">
+                <h2>Estas invitado</h2>
+                <h1>Inauguracion de nuestra casa</h1>
+            </div>
         </main>
     </section>
     <section class="pags" id="pag2">
