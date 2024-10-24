@@ -224,6 +224,13 @@
                             color: white;
                             box-shadow: 0px 0px 10px 0px rgba(127, 0, 25, 1);
                         }
+
+                        .minimal-button:focus {
+                            background-color: #7f0019;
+                            border: 2px solid #7f0019;
+                            color: white;
+                            box-shadow: 0px 0px 10px 0px rgba(127, 0, 25, 1);
+                        }
                     }
                 }
 
