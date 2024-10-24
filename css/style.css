@@ -176,6 +176,22 @@
     transform: translateY(5%);
   }
 }
+@keyframes glob2 {
+  0% {
+    transform: translateY(-2%);
+  }
+  100% {
+    transform: translateY(2%);
+  }
+}
+@keyframes reolad {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 #loader {
   background-color: #d8d8d8;
   overflow: hidden;
@@ -319,6 +335,22 @@
     transform: translateY(5%);
   }
 }
+@keyframes glob2 {
+  0% {
+    transform: translateY(-2%);
+  }
+  100% {
+    transform: translateY(2%);
+  }
+}
+@keyframes reolad {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 html {
   --color-white: #ffffff;
   --color-black: #191919;
@@ -393,9 +425,16 @@ html {
 #flexed * {
   transition: all 0.5s;
 }
+#flexed #particles-js {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 0;
+}
 #flexed #btn-modalop {
   width: 100vw;
   height: 0vh;
+  z-index: 150;
   display: flex;
   position: fixed;
   justify-content: start;
@@ -506,21 +545,39 @@ html {
 }
 #flexed #nav #navbarNav #barra ul li a:hover {
   color: #7f0019;
-  font-size: 105%;
 }
 
 @media screen and (max-width: 500px) {
-  #flexed .boton-modal div {
+  #flexed #btn-modalop {
+    justify-content: end;
+  }
+  #flexed #btn-modalop div {
     width: 5rem;
     height: 1rem;
     margin: 3%;
     border-radius: 1rem;
   }
-  #flexed .boton-modal div label ion-icon {
+  #flexed #btn-modalop div label ion-icon {
     font-size: 250%;
   }
-  #flexed .boton-modal div label p {
+  #flexed #btn-modalop div label p {
     font-size: 80%;
+  }
+  #flexed #btn-modalop.abajo2 {
+    width: 100vw;
+    height: 0vh;
+    padding: 0;
+    margin: 0;
+  }
+  #flexed #btn-modalop.abajo2 div {
+    width: 3rem;
+    height: 3rem;
+    padding: 0;
+    margin: 2.5%;
+    border-radius: 100%;
+  }
+  #flexed #btn-modalop.abajo2 div label p {
+    font-size: 0;
   }
   #flexed #nav #slogan p {
     font-size: 65%;
@@ -541,9 +598,6 @@ html {
     text-align: center;
     font-size: 70%;
     font-weight: 550;
-  }
-  #flexed #nav #navbarNav #barra ul li a:hover {
-    font-size: 75%;
   }
   #flexed #nav #slogan.abajo {
     margin-bottom: 0;
@@ -661,6 +715,22 @@ html {
   }
   100% {
     transform: translateY(5%);
+  }
+}
+@keyframes glob2 {
+  0% {
+    transform: translateY(-2%);
+  }
+  100% {
+    transform: translateY(2%);
+  }
+}
+@keyframes reolad {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 #btn-modal {
@@ -923,24 +993,36 @@ html {
   font-size: 100%;
   color: #5c3168;
 }
-.modals .infmodcont .cont-infom #info-modal .exito h3,
-.modals div .cont-infom #info-modal .exito h3 {
-  font-size: 75%;
-}
 .modals .infmodcont .cont-infom #info-modal .exito.activof,
 .modals div .cont-infom #info-modal .exito.activof {
   display: flex;
 }
 
 @media screen and (max-width: 500px) {
+  .modals .btn-close {
+    align-items: end;
+  }
   .modals .btn-close div {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 7rem;
+    height: 3rem;
     margin: 3%;
-    border-radius: 100%;
+    border-radius: 1rem;
   }
   .modals .btn-close div label {
-    font-size: 300%;
+    font-size: 350%;
+  }
+  .modals .btn-close.abajo3 {
+    width: 100vw;
+    height: 0vh;
+    padding: 0;
+    margin: 0;
+  }
+  .modals .btn-close.abajo3 div {
+    width: 3rem;
+    height: 3rem;
+    padding: 0;
+    margin: 2.5%;
+    border-radius: 100%;
   }
   .modals .infmodcont .cont-infom {
     width: 90%;
@@ -967,7 +1049,6 @@ body {
   transition: all 0.5s;
   overflow-x: hidden;
   background-color: #d8d8d8;
-  background-image: url(../img/fondo.png);
 }
 body .pags {
   width: 100vw;
@@ -989,16 +1070,17 @@ body #pag1 main {
 body #pag1 main .globs {
   width: 50%;
   height: 100%;
-  z-index: -100;
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
   animation: glob 10s ease-in-out alternate infinite;
 }
 body #pag1 main #gob1 {
+  z-index: 106;
   background-image: url(../img/2.1-columna-1.png);
 }
 body #pag1 main #gob2 {
+  z-index: 107;
   background-image: url(../img/2.1-columna-2.png);
 }
 body #pag1 main #titulo {
@@ -1026,6 +1108,7 @@ body #pag2 {
 body #pag2 #boxmapicon {
   width: 4rem;
   height: 4rem;
+  z-index: 100;
   margin: 1%;
   display: flex;
   background-color: #ffffff;
@@ -1050,6 +1133,7 @@ body #pag2 #boxmapicon a ion-icon {
 body #pag2 #boxmap {
   width: 30%;
   height: 55%;
+  z-index: 101;
   padding: 5%;
   display: flex;
   flex-direction: column;
@@ -1084,6 +1168,7 @@ body #pag3 #contador {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 111;
 }
 body #pag3 #contador .simply-section {
   width: 20%;
@@ -1121,6 +1206,7 @@ body #pag3 #contador .simply-section div .simply-word {
 body #pag3 #fecha {
   width: 9vw;
   height: 6vh;
+  z-index: 103;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1144,6 +1230,7 @@ body #pag4 {
 body #pag4 #paleta {
   width: 23rem;
   height: 23rem;
+  z-index: 110;
   background-color: #ffffff;
   background-image: url(../img/Colorimetria.png);
   background-size: cover;
@@ -1154,6 +1241,7 @@ body #pag4 #paleta {
   margin: 1%;
 }
 body #pag4 #estilo {
+  z-index: 104;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1190,6 +1278,7 @@ body #pag5 {
 body #pag5 #carrusel {
   width: 97%;
   height: 80%;
+  z-index: 105;
   display: flex;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
@@ -1205,17 +1294,19 @@ body #database {
 }
 body #database table {
   width: 40%;
-  height: 90%;
+  z-index: 100;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-shadow: 0px 0px 50px 20px rgb(255, 255, 255);
 }
 body #database table thead, body #database table #data {
   background-color: #5c3168;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 100%;
 }
 body #database table thead tr, body #database table #data tr {
@@ -1225,6 +1316,9 @@ body #database table thead tr, body #database table #data tr {
 }
 body #database table thead tr th, body #database table thead tr td, body #database table #data tr th, body #database table #data tr td {
   padding: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 3px solid;
   border-color: #ffffff;
   color: #ffffff;
@@ -1246,19 +1340,17 @@ body #database table thead tr th span, body #database table thead tr td span, bo
 body #database #reload {
   width: 2rem;
   height: 2rem;
-  margin-top: 1%;
+  margin-top: 2%;
+  z-index: 101;
   border-radius: 100%;
   background-color: #5c3168;
+  animation: reolad 5s ease-in-out infinite;
 }
 body #database #reload a {
   width: 90%;
   height: 90%;
   font-size: 200%;
   color: #ffffff;
-}
-body #database #reload:hover {
-  rotate: 180deg;
-  transition: all 1s;
 }
 body #link {
   width: 100vw;
@@ -1291,12 +1383,16 @@ body #link .links a {
 }
 
 @media screen and (max-width: 500px) {
-  body #pag1 {
-    display: flex;
+  body #pag1 main .globs {
+    animation: glob2 7s ease-in-out alternate infinite;
   }
-  body #pag1 main {
-    background-image: url(../img/2.png);
-    background-size: 100%;
+  body #pag1 main #gob1 {
+    background-image: url(../img/2-columna-1.png);
+  }
+  body #pag1 main #gob2 {
+    background-image: url(../img/2-columna-2.png);
+  }
+  body #pag1 main #titulo {
     font-size: 70%;
   }
   body #pag2 #boxmapicon {
@@ -1361,16 +1457,15 @@ body #link .links a {
   }
   body #database table {
     width: 98%;
-    height: 90%;
   }
   body #database table thead tr th, body #database table thead tr td, body #database table #data tr th, body #database table #data tr td {
     border: 1px solid;
-    font-size: 65%;
+    font-size: 75%;
   }
   body #database #reload {
     width: 2rem;
     height: 2rem;
-    margin-top: 1%;
+    margin-top: 5%;
     border-radius: 100%;
     background-color: #5c3168;
   }

@@ -4,9 +4,16 @@
         transition: all 0.5s;
     }
     //modal
+    #particles-js {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        z-index: 0;
+    }
     #btn-modalop {
         width: 100vw;
         height: 0vh;
+        z-index: 150;
         display: flex;
         position: fixed;
         justify-content: start;
@@ -115,18 +122,17 @@
                         }
                         a:hover {
                             color: $Secundario4;
-                            font-size: 105%; 
                         }
                     }
                 }
             }
         }
     }
-
 }
 @media screen and (max-width: 500px) {
 #flexed {
-    .boton-modal {
+    #btn-modalop {
+        justify-content: end;
         div {
             width: 5rem;
             height: 1rem;
@@ -138,6 +144,24 @@
                 }
                 p {
                     font-size: 80%;
+                }
+            }
+        }
+    }
+    #btn-modalop.abajo2 {
+        width: 100vw;
+        height: 0vh;
+        padding: 0;
+        margin: 0;
+        div {
+            width: 3rem;
+            height: 3rem;
+            padding: 0;
+            margin: 2.5%;
+            border-radius: 100%;
+            label {
+                p {
+                    font-size: 0;
                 }
             }
         }
@@ -162,9 +186,6 @@
                             text-align: center;
                             font-size: 70%; 
                             font-weight: 550;
-                        }
-                        a:hover {
-                            font-size: 75%; 
                         }
                     }
                 }

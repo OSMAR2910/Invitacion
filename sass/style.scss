@@ -21,7 +21,6 @@ body{
     transition: all 0.5s;
     overflow-x: hidden;
     background-color: $Primario;
-    background-image: url(../img/fondo.png);
     .pags {
         width: 100vw;
         height: 100vh;
@@ -41,16 +40,17 @@ body{
             .globs {
                 width: 50%;
                 height: 100%;
-                z-index: -100;
                 background-size: cover;
                 background-position: center top;
                 background-repeat: no-repeat;
                 animation: glob 10s ease-in-out alternate infinite;
             }
             #gob1 {
+                z-index: 106;
                 background-image: url(../img/2.1-columna-1.png);
             }
             #gob2 {
+                z-index: 107;
                 background-image: url(../img/2.1-columna-2.png);
             }
             #titulo {
@@ -79,6 +79,7 @@ body{
         #boxmapicon {
             width: 4rem;
             height: 4rem;
+            z-index: 100;
             margin: 1%;
             display: flex;
             background-color: $Secundario;
@@ -103,6 +104,7 @@ body{
         #boxmap {
             width: 30%;
             height: 55%;
+            z-index: 101;
             padding: 5%;
             display: flex;
             flex-direction: column;
@@ -137,6 +139,7 @@ body{
             display: flex;
             justify-content: center;
             align-items: center;
+            z-index: 111;
             .simply-section {
                 width: 20%;
                 height: 100%;
@@ -174,6 +177,7 @@ body{
         #fecha {
             width: 9vw;
             height: 6vh;
+            z-index: 103;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -197,6 +201,7 @@ body{
         #paleta {
             width: 23rem;
             height: 23rem;
+            z-index: 110;
             background-color: $Secundario;
             background-image: url(../img/Colorimetria.png);
             background-size: cover;
@@ -207,6 +212,7 @@ body{
             margin: 1%;
         }
         #estilo {
+            z-index: 104;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -243,6 +249,7 @@ body{
         #carrusel {
             width: 97%;
             height: 80%;
+            z-index: 105;
             display: flex;
             overflow-x: scroll;
             scroll-snap-type: x mandatory;
@@ -259,16 +266,18 @@ body{
         align-items: center;
         table {
             width: 40%;
-            height: 90%;
+            z-index: 100;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            box-shadow: 0px 0px 50px 20px rgba(255,255,255,1);
             thead, #data {
                 background-color: $Secundario3;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+                align-items: center;
                 width: 100%;
                 tr {
                     width: 100%;
@@ -276,6 +285,9 @@ body{
                     justify-content: space-around;
                     th, td {
                         padding: 1%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
                         border: 3px solid;
                         border-color: $Secundario;
                         color: $Secundario;
@@ -301,19 +313,17 @@ body{
         #reload {
             width: 2rem;
             height: 2rem;
-            margin-top: 1%;
+            margin-top: 2%;
+            z-index: 101;
             border-radius: 100%;
             background-color: $Secundario3;
+            animation: reolad 5s ease-in-out infinite;
             a {
                 width: 90%;
                 height: 90%;
                 font-size: 200%;
                 color: $Secundario;
             }
-        }
-        #reload:hover {
-            rotate: 180deg;
-            transition: all 1s;
         }
     }
     #link {
@@ -349,11 +359,19 @@ body{
 @media screen and (max-width: 500px) {
     body{
         #pag1 {
-            display: flex;
             main {
-                background-image: url(../img/2.png);
-                background-size: 100%;
-                font-size: 70%;
+                .globs {
+                    animation: glob2 7s ease-in-out alternate infinite;
+                }
+                #gob1 {
+                    background-image: url(../img/2-columna-1.png);
+                }
+                #gob2 {
+                    background-image: url(../img/2-columna-2.png);
+                }
+                #titulo {
+                    font-size: 70%;
+                }
             }
         }
         #pag2 {
@@ -432,12 +450,11 @@ body{
         #database {
             table {
                 width: 98%;
-                height: 90%;
                 thead, #data {
                     tr {
                         th, td {
                             border: 1px solid;
-                            font-size: 65%;
+                            font-size: 75%;
                         }
                         
                     }
@@ -446,7 +463,7 @@ body{
             #reload {
                 width: 2rem;
                 height: 2rem;
-                margin-top: 1%;
+                margin-top: 5%;
                 border-radius: 100%;
                 background-color: $Secundario3;
                 a {
