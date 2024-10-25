@@ -43,15 +43,16 @@ body{
                 background-size: cover;
                 background-position: center top;
                 background-repeat: no-repeat;
-                animation: glob 10s ease-in-out alternate infinite;
             }
             #gob1 {
                 z-index: 106;
                 background-image: url(../img/2.1-columna-1.png);
+                animation: glob1 10s ease-in-out alternate infinite;
             }
             #gob2 {
                 z-index: 107;
                 background-image: url(../img/2.1-columna-2.png);
+                animation: glob2 10s ease-in-out alternate infinite;
             }
             #titulo {
                 width: 100%;
@@ -102,8 +103,8 @@ body{
             }
         }
         #boxmap {
-            width: 30%;
-            height: 55%;
+            width: 30rem;
+            height: 30rem;
             z-index: 101;
             padding: 5%;
             display: flex;
@@ -141,8 +142,8 @@ body{
             align-items: center;
             z-index: 111;
             .simply-section {
-                width: 20%;
-                height: 100%;
+                width: 20rem;
+                height: 13rem;
                 margin: 5%;
                 display: flex;
                 justify-content: center;
@@ -360,13 +361,12 @@ body{
     body{
         #pag1 {
             main {
-                .globs {
-                    animation: glob2 7s ease-in-out alternate infinite;
-                }
                 #gob1 {
+                    animation: globm1 7s ease-in-out alternate infinite;
                     background-image: url(../img/2-columna-1.png);
                 }
                 #gob2 {
+                    animation: globm2 7s ease-in-out alternate infinite;
                     background-image: url(../img/2-columna-2.png);
                 }
                 #titulo {
