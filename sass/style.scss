@@ -5,18 +5,20 @@
 @import "navbarNav";
 @import "modals";
 
-*{
+  *{
     scroll-behavior:smooth;
-}
-::-webkit-scrollbar {
-    width: 1rem;
-}
-::-webkit-scrollbar-track {
-    background: $Secundario;
-}
-::-webkit-scrollbar-thumb {
-    background: $Primario;
-}
+  }
+  *::-webkit-scrollbar {
+    width: 1rem;      
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: $Secundario;     
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: $Primario;    
+  }
 body{
     transition: all 0.5s;
     overflow-x: hidden;
