@@ -149,3 +149,29 @@ catch(error){
 	
  });
 
+//Login
+
+ function loguear()
+ {
+	 let user = document.getElementById('user').value;
+	 let pass = document.getElementById('pass').value;	 
+ 
+	 if (user=='Osmar' && pass=='2005' || user=='Danna' && pass=='2005') {
+
+		 window.location='database.html';
+	 }
+ 
+	 else {
+		setTimeout(function() {
+			const formuariolog = document.getElementById('formuariolog');
+			const error = document.getElementById('error');
+				formuariolog.classList.remove('activolog');
+				error.classList.add('activolog');
+		}, 1000)
+		formuariolog.classList.add('animacionlog');
+		
+		
+
+		
+	 }
+ }
