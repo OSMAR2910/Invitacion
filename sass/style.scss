@@ -564,7 +564,7 @@ body{
                     }
                 }
             }
-        }
+    }
     }
 @media screen and (max-width: 500px) {
     body{
@@ -694,6 +694,14 @@ body{
                     font-size: 400%;
                 }
             }
+        }
+        #Login {
+            .Logincont {
+                    .Login-cont {
+                        width: 90%;
+                        height: 50%;
+                    }
+                }
         }
     }
 }

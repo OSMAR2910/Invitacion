@@ -1727,4 +1727,8 @@ body #Login .Logincont .Login-cont #Login-son .error.activolog {
   body #link .links a {
     font-size: 400%;
   }
+  body #Login .Logincont .Login-cont {
+    width: 90%;
+    height: 50%;
+  }
 }/*# sourceMappingURL=style.css.map */
