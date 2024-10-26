@@ -1,0 +1,713 @@
+@import "carga";
+@import "animaciones";
+@import "cursor";
+@import "variables";
+@import "navbarNav";
+@import "modals";
+
+  *{
+    scroll-behavior:smooth;
+  }
+  *::-webkit-scrollbar {
+    width: 7px;      
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: $Secundario;     
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: $Primario;    
+  }
+body{
+    transition: all 0.5s;
+    overflow-x: hidden;
+    background-color: $Primario;
+    .pags {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+
+    }
+    #pag1 {
+        display: flex;
+        main {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            overflow: hidden;
+            .globs {
+                width: 50%;
+                height: 100%;
+                background-size: cover;
+                background-position: center top;
+                background-repeat: no-repeat;
+            }
+            #gob1 {
+                z-index: 106;
+                background-image: url(../img/2.1-columna-1.png);
+                animation: glob1 10s ease-in-out alternate infinite;
+            }
+            #gob2 {
+                z-index: 107;
+                background-image: url(../img/2.1-columna-2.png);
+                animation: glob2 10s ease-in-out alternate infinite;
+            }
+            #titulo {
+                width: 100%;
+                display: flex;
+                color: $Secundario4;
+                position: absolute;
+                flex-direction: column;
+                font-size: 120%;
+                font-family: "Playfair Display", serif;
+                font-optical-sizing: auto;
+                font-weight: 600;
+                font-style: italic;
+                h1, h2 {
+                    margin: 0;
+                    padding: 0.5%;
+                }
+            }
+        }
+    }
+    #pag2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        #boxmapicon {
+            width: 4rem;
+            height: 4rem;
+            z-index: 100;
+            margin: 1%;
+            display: flex;
+            background-color: $Secundario;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100%;
+            a {
+                width: 90%;
+                height: 90%;
+                display: flex;
+                font-size: 100%;
+                color: $Secundario3;
+                text-decoration: none;
+                justify-content: center;
+                align-items: center;
+                ion-icon {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        #boxmap {
+            width: 30rem;
+            height: 30rem;
+            z-index: 101;
+            padding: 5%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: $Secundario;
+            border-radius: 2rem;
+            margin: 0;
+            padding: 0;
+            div {
+                width: 100%;
+                height: 10%;
+                display: flex;
+                justify-content: center;
+                justify-items: center;
+            }
+            iframe {
+                width: 95%;
+                height: 95%;
+                border-radius: 1.5rem;
+            }
+        }
+    }
+    #pag3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        #contador {
+            width: 80vw;
+            height: 20vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 111;
+            .simply-section {
+                width: 20rem;
+                height: 13rem;
+                margin: 5%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                background-color: $Secundario;
+                border-radius: 1rem;
+                div {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    .simply-amount {
+                        font-size: 150%;
+                        margin: 1.5%;
+                        color: $Secundario4;
+                        font-family: $lerea1;
+                        font-weight: 550;
+                    }
+                    .simply-word {
+                        font-size: 150%;
+                        margin: 1.5%;
+                        color: $Secundario4;
+                        font-family: $lerea1;
+                        font-weight: 550;
+                    }
+                }
+            }
+        }
+        #fecha {
+            width: 9vw;
+            height: 6vh;
+            z-index: 103;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $Secundario;
+            border-radius: 1rem;
+            margin-top: 3%;
+            a {
+                text-decoration: none;
+                font-size: 130%;
+                color: $Secundario4;
+                font-family: $lerea1;
+                font-weight: 550;
+            }
+        }
+    }
+    #pag4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        #paleta {
+            width: 23rem;
+            height: 23rem;
+            z-index: 110;
+            background-color: $Secundario;
+            background-image: url(../img/Colorimetria.png);
+            background-size: cover;
+            background-position: center top;
+            background-repeat: no-repeat;
+            border-radius: 100%;
+            padding: 1%;
+            margin: 1%;
+        }
+        #estilo {
+            z-index: 104;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $Secundario;
+            width: 15rem;
+            height: 5rem;
+            border-radius: 1rem;
+            margin: 1%;
+            ul {
+                display: flex;
+                flex-direction: column;
+                list-style: none;
+                justify-content: center;
+                align-items: center;
+                padding: 0;
+                margin: 0;
+                li {
+                    margin: 10%;
+                    color: $Secundario4;
+                    font-family: $lerea1;
+                    a {
+                        color: $Secundario4;
+                        font-family: $lerea1;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+    #pag5 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        #carrusel {
+            width: 97%;
+            height: 80%;
+            z-index: 105;
+            display: flex;
+            overflow-x: scroll;
+        }
+    }
+
+    #database {
+        background-color: $Primario;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        table {
+            width: 40%;
+            max-height: 50%;
+            overflow-y: scroll;
+            z-index: 100;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px 0px 50px 20px rgba(255,255,255,1);
+            thead, #data {
+                background-color: $Secundario3;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                tr {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-around;
+                    th, td {
+                        padding: 1%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border: 3px solid;
+                        border-color: $Secundario;
+                        color: $Secundario;
+                        font-family: $letra2;
+                        text-align: center;
+                        width: 33%;
+                        .icon {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        span {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin-left: 5px;
+                        }
+                    }
+                    
+                }
+            }
+        }
+        #reload {
+            width: 2rem;
+            height: 2rem;
+            margin-top: 2%;
+            z-index: 101;
+            border-radius: 100%;
+            background-color: $Secundario3;
+            animation: reolad 5s ease-in-out infinite;
+            a {
+                width: 90%;
+                height: 90%;
+                font-size: 200%;
+                color: $Secundario;
+            }
+        }
+    }
+    #link {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $Primario;
+        .links {
+            width: 20rem;
+            height: 20rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 5%;
+            border-radius: 100%;
+            background-color: $Secundario3;
+            a {
+                width: 100%;
+                height: 100%;
+                font-size: 650%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: $Secundario;
+                text-decoration: none;
+                margin-bottom: 5%;
+            }
+        }
+    }
+    #Login {
+        width: 100vw;
+        height: 100vh;
+        z-index: 1000;
+        .Logincont {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                animation: modal1 1s ease-in-out;
+                animation-delay: 1s;
+        
+                .Login-cont {
+                    width: 30%;
+                    height: 50%;
+                    border-radius: 1rem;
+                    background-color: $Secundario;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+        
+                    #Login-son {
+                        width: 90%;
+                        height: 90%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        overflow: hidden;
+        
+                        .formuariolog {
+                            width: 100%;
+                            height: 100%;
+                            padding: 5%;
+                            display: none;
+                            font-family: $letra2;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
+                            z-index: 1001;
+                            .wel {
+                                flex-direction: column;
+                                text-align: center;
+                                margin: 5%;
+                                h3 {
+                                    margin: 3%;
+                                    color: $Secundario3;
+                                    font-size: 180%;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    span {
+                                        color: $Secundario3;
+                                    }
+                                }
+
+                                p {
+                                    width: 100%;
+                                    margin: 3%;
+                                    color: $Secundario3;
+                                    font-size: 80%;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    span {
+                                        color: $Secundario3;
+                                    }
+                                }
+                            }
+        
+                            .input-field {
+                                position: relative;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                margin-bottom: 6%;
+                                width: 80%;
+                                height: 3.5rem;
+        
+                                input::-webkit-inner-spin-button,
+                                input::-webkit-outer-spin-button {
+                                    -webkit-appearance: none;
+                                }
+        
+                                input[type="number"] {
+                                    -moz-appearance: textfield;
+                                }
+        
+                                input {
+                                    width: 100%;
+                                    height: 100%;
+                                    border-radius: 1rem;
+                                    font-size: 17px;
+                                    padding: 0px 10px;
+                                    border: 2px solid #5c3168;
+                                    background: transparent;
+                                    color: #5c3168;
+                                    outline: none;
+                                    text-align: center;
+                                }
+        
+                                input:focus {
+                                    border: 2px solid #7f0019;
+                                }
+        
+                                input:focus~label,
+                                input:valid~label {
+                                    top: 0;
+                                    font-size: 15px;
+                                    padding: 0 6px;
+                                    background: $Secundario;
+                                }
+        
+                                label {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    position: absolute;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                    color: #5c3168;
+                                    font-size: 17px;
+                                    pointer-events: none;
+                                    transition: 0.3s;
+        
+                                    span {
+                                        margin-left: 3px;
+                                    }
+                                }
+                            }
+        
+                            .input-submit {
+                                height: 15%;
+                                width: 80%;
+                                text-align: center;
+        
+                                .minimal-button {
+                                    background-color: transparent;
+                                    border: 2px solid #5c3168;
+                                    color: #5c3168;
+                                    padding: 10px 20px;
+                                    font-size: 16px;
+                                    cursor: pointer;
+                                    border-radius: 5px;
+                                    transition: background-color 0.3s, color 0.3s;
+                                }
+        
+                                .minimal-button:hover {
+                                    background-color: #7f0019;
+                                    border: 2px solid #7f0019;
+                                    color: white;
+                                    box-shadow: 0px 0px 10px 0px rgba(127, 0, 25, 1);
+                                }
+        
+                                .minimal-button:focus {
+                                    background-color: #7f0019;
+                                    border: 2px solid #7f0019;
+                                    color: white;
+                                    box-shadow: 0px 0px 10px 0px rgba(127, 0, 25, 1);
+                                }
+                            }
+                        }
+        
+                        .formuariolog.activolog {
+                            display: flex;
+                        }
+        
+                        .formuariolog.animacionlog {
+                            animation: form 0.8s ease-in-out;
+                            animation-fill-mode: forwards;
+                        }
+        
+                        .error {
+                            width: 100%;
+                            height: 100%;
+                            padding: 5%;
+                            display: none;
+                            font-family: $letra2;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
+                            z-index: 1001;
+                            animation: exito 0.8s ease-in-out;
+        
+                            #icon {
+                                font-size: 1100%;
+                                color: #5c3168;
+                                text-align: center;
+                            }
+        
+                            h1,
+                            h3 {
+                                width: 100%;
+                                text-align: center;
+                                font-size: 100%;
+                                color: $Secundario3;
+                            }
+                        }
+        
+                        .error.activolog {
+                            display: flex;
+                        }
+                    }
+                }
+            }
+        .Logincont.animacionlogr {
+            animation: modal1r 1s ease-in-out;
+            animation-fill-mode: forwards;
+        }
+    }
+    }
+@media screen and (max-width: 500px) {
+    body{
+        #pag1 {
+            main {
+                #gob1 {
+                    animation: globm1 7s ease-in-out alternate infinite;
+                    background-image: url(../img/2-columna-1.png);
+                }
+                #gob2 {
+                    animation: globm2 7s ease-in-out alternate infinite;
+                    background-image: url(../img/2-columna-2.png);
+                }
+                #titulo {
+                    font-size: 70%;
+                }
+            }
+        }
+        #pag2 {
+            #boxmapicon {
+                width: 3rem;
+                height: 3rem;
+                margin: 3%;
+            }
+            #boxmap {
+                width: 80%;
+                height: 35%;
+            }
+        }
+        #pag3 {
+            #contador {
+                width: 95vw;
+                height: 10vh;
+                .simply-section {
+                    width: 25%;
+                    height: 100%;
+                    margin: 1%;
+                    div {
+                        .simply-amount {
+                            font-size: 100%;
+                            margin: 1%;
+                        }
+                        .simply-word {
+                            font-size: 100%;
+                            margin: 1%;
+                        }
+                    }
+                }
+            }
+            #fecha {
+                width: 20vw;
+                height: 5vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $Secundario;
+                border-radius: 1rem;
+                margin-top: 5%;
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: $Secundario4;
+                    font-family: $lerea1;
+                    font-size: 80%;
+                    font-weight: 550;
+                }
+            }
+        }
+        #pag4 {
+            #paleta {
+                width: 17rem;
+                height: 17rem;
+            }
+            #estilo {
+                width: 13rem;
+                height: 4rem;
+                ul {
+                    li {
+                        margin: 5%;
+                    }
+                }
+            }
+        }
+        #pag5 {
+            #carrusel {
+                width: 95%;
+                height: 60%;
+            }
+        }
+
+        #database {
+            table {
+                width: 98%;
+                max-height: 50%;
+                thead, #data {
+                    tr {
+                        th, td {
+                            border: 1px solid;
+                            font-size: 75%;
+                        }
+                        
+                    }
+                }
+            }
+            #reload {
+                width: 2rem;
+                height: 2rem;
+                margin-top: 5%;
+                border-radius: 100%;
+                background-color: $Secundario3;
+                a {
+                    width: 90%;
+                    height: 90%;
+                    font-size: 200%;
+                    color: $Secundario;
+                }
+            }
+        }
+        #link {
+            flex-direction: column;
+            .links {
+                width: 10rem;
+                height: 10rem;
+                display: flex;
+                margin: 5%;
+                a {
+                    font-size: 400%;
+                }
+            }
+        }
+        #Login {
+            .Logincont {
+                    .Login-cont {
+                        width: 90%;
+                        height: 50%;
+                    }
+                }
+        }
+    }
+}

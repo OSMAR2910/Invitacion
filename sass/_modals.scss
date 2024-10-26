@@ -1,0 +1,318 @@
+@import "animaciones";
+
+#btn-modal {
+    display: none;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+    transition-behavior: display .5s ease allow-discrete;
+
+    .btn-close {
+        opacity: 0;
+        transition: all .5s ease-in-out;
+        transition-behavior: display .5s ease allow-discrete;
+    }
+
+    .infmodcont {
+        transform: none;
+        transition: all .4s ease-in-out;
+        transition-behavior: display .4s ease allow-discrete;
+    }
+}
+
+#btn-modal:checked~.modals {
+    display: flex;
+}
+
+
+.modals {
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    background-color: $Transparente;
+    animation: btn 0.9s ease-in-out;
+
+    .btn-close {
+        display: flex;
+        position: fixed;
+        justify-content: start;
+        align-items: start;
+        z-index: 1000;
+        animation: btn 0.9s ease-in-out;
+
+        div {
+            width: 8.5rem;
+            height: 4rem;
+            margin: 1.5% 1.5%;
+            border-radius: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $Secundario;
+
+            label {
+                width: 100%;
+                height: 100%;
+                font-size: 350%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: $Secundario3;
+                font-family: $letra2;
+                transition: all 0.5s;
+            }
+
+            label:hover {
+                color: $Secundario4;
+            }
+        }
+    }
+
+    .btn-close.abajo3 {
+        width: 100vw;
+        height: 0vh;
+        padding: 0;
+        margin: 0;
+
+        div {
+            width: 3.5rem;
+            height: 3.5rem;
+            padding: 0;
+            margin: 1.5%;
+            border-radius: 100%;
+        }
+    }
+    .infmodcont,
+    div {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        animation: modal1 1s ease-in-out;
+
+        .cont-infom {
+            width: 30%;
+            height: 50%;
+            border-radius: 1rem;
+            background-color: $Secundario;
+
+            #info-modal {
+                width: 90%;
+                height: 90%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+
+                .formuario {
+                    width: 100%;
+                    height: 100%;
+                    padding: 5%;
+                    display: none;
+                    font-family: $letra2;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    z-index: 1001;
+
+                    .input-field {
+                        position: relative;
+                        margin-bottom: 6%;
+                        width: 80%;
+                        height: 3.5rem;
+
+                        input::-webkit-inner-spin-button,
+                        input::-webkit-outer-spin-button {
+                            -webkit-appearance: none;
+                        }
+
+                        input[type="number"] {
+                            -moz-appearance: textfield;
+                        }
+
+                        h3 {
+                            margin: 3%;
+                            color: $Secundario3;
+                            font-size: 150%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+
+                        ul {
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-evenly;
+                            margin: 1%;
+                            padding: 0;
+
+                            li {
+                                display: inline;
+                                color: $Secundario3;
+                                font-family: $letra2;
+                                font-size: 110%;
+                            }
+                        }
+
+                        input {
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 1rem;
+                            font-size: 17px;
+                            padding: 0px 10px;
+                            border: 2px solid #5c3168;
+                            background: transparent;
+                            color: #5c3168;
+                            outline: none;
+                            text-align: center;
+                        }
+
+                        input:focus {
+                            border: 2px solid #7f0019;
+                        }
+
+                        input:focus~label,
+                        input:valid~label {
+                            top: 0;
+                            font-size: 15px;
+                            padding: 0 6px;
+                            background: $Secundario;
+                        }
+
+                        label {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            color: #5c3168;
+                            font-size: 17px;
+                            pointer-events: none;
+                            transition: 0.3s;
+
+                            span {
+                                margin-left: 3px;
+                            }
+                        }
+                    }
+
+                    .input-submit {
+                        height: 15%;
+                        width: 80%;
+                        text-align: center;
+
+                        .minimal-button {
+                            background-color: transparent;
+                            border: 2px solid #5c3168;
+                            color: #5c3168;
+                            padding: 10px 20px;
+                            font-size: 16px;
+                            cursor: pointer;
+                            border-radius: 5px;
+                            transition: background-color 0.3s, color 0.3s;
+                        }
+
+                        .minimal-button:hover {
+                            background-color: #7f0019;
+                            border: 2px solid #7f0019;
+                            color: white;
+                            box-shadow: 0px 0px 10px 0px rgba(127, 0, 25, 1);
+                        }
+
+                        .minimal-button:focus {
+                            background-color: #7f0019;
+                            border: 2px solid #7f0019;
+                            color: white;
+                            box-shadow: 0px 0px 10px 0px rgba(127, 0, 25, 1);
+                        }
+                    }
+                }
+
+                .formuario.activof {
+                    display: flex;
+                }
+
+                .formuario.animacion {
+                    animation: form 0.8s ease-in-out;
+                    animation-fill-mode: forwards;
+                }
+
+                .exito {
+                    width: 100%;
+                    height: 100%;
+                    padding: 5%;
+                    display: none;
+                    font-family: $letra2;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    z-index: 1001;
+                    animation: exito 0.8s ease-in-out;
+
+                    #icon {
+                        font-size: 1000%;
+                        color: #5c3168;
+                        text-align: center;
+                    }
+
+                    h1,
+                    h3 {
+                        width: 100%;
+                        text-align: center;
+                        font-size: 100%;
+                        color: $Secundario3;
+                    }
+                }
+
+                .exito.activof {
+                    display: flex;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .modals {
+        .btn-close {
+            align-items: end;
+                div {
+                    width: 7rem;
+                    height: 3rem;
+                    margin: 3%;
+                    border-radius: 1rem;
+        
+                    label {
+                        font-size: 350%;
+                    }
+                }
+        }
+    
+        .btn-close.abajo3 {
+            width: 100vw;
+            height: 0vh;
+            padding: 0;
+            margin: 0;
+            div {
+                width: 3rem;
+                height: 3rem;
+                padding: 0;
+                margin: 2.5%;
+                border-radius: 100%;
+            }
+        }
+
+        .infmodcont {
+            .cont-infom {
+                width: 90%;
+                height: 50%;
+            }
+        }
+    }
+}

@@ -1,0 +1,144 @@
+@import "variables";
+@keyframes preloader {
+  100% { transform: scale(2); }
+}
+@keyframes preloader {
+    100% { transform: scale(2); }
+  }
+/*@keyframes btn_fullscreen {
+    0% {
+        transform: rotate(none) scale(1);
+    }
+    50% {
+        transform: rotate(50deg) scale(1.1);
+        background-color: $Blanco;
+    }
+    100% {
+        transform: rotate(none) scale(1);
+    }
+}*/
+/*@keyframes btn-modal {
+    0% {
+        transform: translate(0, -100vh);
+    }
+    50% {
+        transform: translate(0, 3vh);
+    }
+    100% {
+        transform:translate(0, 0vh);
+    }
+}*/
+/*@keyframes logo_palpitar {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1); 
+    }
+}*/
+/*@keyframes iz {
+    0% {
+        transform: translateX(-100vw);
+    }
+    50% {
+        transform: translateX(2vw);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}*/
+@keyframes exito {
+    0% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(5%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes form {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-5%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+@keyframes modal1 {
+    0% {
+        transform: translateY(-100%);
+    }
+    50% {
+        transform: translateY(5%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes modal1r {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(5%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+@keyframes btn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes glob1 {
+    0% {
+        transform: translateY(-5%);
+    }
+    100% {
+        transform: translateY(5%);
+    }
+}
+@keyframes glob2 {
+    0% {
+        transform: translateY(5%);
+    }
+    100% {
+        transform: translateY(-5%);
+    }
+}
+@keyframes globm1 {
+    0% {
+        transform: translateY(-2%);
+    }
+    100% {
+        transform: translateY(2%);
+    }
+}
+@keyframes globm2 {
+    0% {
+        transform: translateY(2%);
+    }
+    100% {
+        transform: translateY(-2%);
+    }
+}
+@keyframes reolad {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
