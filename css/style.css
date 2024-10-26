@@ -1433,11 +1433,10 @@ body #database #total {
   height: 2.5rem;
   margin-top: 2%;
   overflow: hidden;
-  z-index: 99;
+  z-index: 100;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0px 0px 50px 20px rgb(255, 255, 255);
 }
 body #database #total #datat {
   width: 30%;
@@ -1797,23 +1796,33 @@ body #Login .Logincont.animacionlogr {
     font-size: 75%;
   }
   body #database #total {
-    width: 50%;
+    width: 55%;
     height: 3%;
     margin-top: 5%;
   }
+  body #database #total #datat {
+    width: 20%;
+  }
+  body #database #total thead {
+    width: 80%;
+  }
   body #database #total thead, body #database #total #datat {
-    border: 1px solid;
+    border: 2px solid;
     border-color: #ffffff;
   }
+  body #database #total thead tr td, body #database #total #datat tr td {
+    font-size: 80%;
+  }
   body #database #total thead tr th, body #database #total thead tr td, body #database #total #datat tr th, body #database #total #datat tr td {
-    width: 70%;
+    width: 90%;
+    height: 90%;
   }
   body #database #total thead tr th .icons, body #database #total thead tr td .icons, body #database #total #datat tr th .icons, body #database #total #datat tr td .icons {
-    font-size: 120%;
+    font-size: 100%;
   }
   body #database #total thead tr th span, body #database #total thead tr td span, body #database #total #datat tr th span, body #database #total #datat tr td span {
-    font-size: 60%;
-    margin-left: 0px;
+    font-size: 65%;
+    margin-left: 5px;
   }
   body #database #reload {
     width: 2rem;

@@ -320,11 +320,10 @@ body{
             height: 2.5rem;
             margin-top: 2%;
             overflow: hidden;
-            z-index: 99;
+            z-index: 100;
             display: flex;
             justify-content: center;
             align-items: center;
-            box-shadow: 0px 0px 50px 20px rgba(255,255,255,1);
             #datat {
                 width: 30%;
             }
@@ -732,21 +731,31 @@ body{
                 }
             }
             #total {
-                width: 50%;
+                width: 55%;
                 height: 3%;
                 margin-top: 5%;
+                #datat {
+                    width: 20%;
+                }
+                thead {
+                    width: 80%;
+                }
                 thead, #datat {
-                    border: 1px solid;
+                    border: 2px solid;
                     border-color: $Secundario;
                     tr {
+                        td {
+                            font-size: 80%;
+                        }
                         th, td {
-                            width: 70%;
+                            width: 90%;
+                            height: 90%;
                             .icons {
-                                font-size: 120%;
+                                font-size: 100%;
                             }
                             span {
-                                font-size: 60%;
-                                margin-left: 0px;
+                                font-size: 65%;
+                                margin-left: 5px;
                             }
                         }
                         
