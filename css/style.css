@@ -1380,7 +1380,7 @@ body #database {
   justify-content: center;
   align-items: center;
 }
-body #database table {
+body #database #NF {
   width: 45rem;
   max-height: 50%;
   overflow-y: scroll;
@@ -1391,7 +1391,7 @@ body #database table {
   align-items: center;
   box-shadow: 0px 0px 50px 20px rgb(255, 255, 255);
 }
-body #database table thead, body #database table #data {
+body #database #NF thead, body #database #NF #data {
   background-color: #5c3168;
   display: flex;
   flex-direction: column;
@@ -1399,12 +1399,12 @@ body #database table thead, body #database table #data {
   align-items: center;
   width: 100%;
 }
-body #database table thead tr, body #database table #data tr {
+body #database #NF thead tr, body #database #NF #data tr {
   width: 100%;
   display: flex;
   justify-content: space-around;
 }
-body #database table thead tr th, body #database table thead tr td, body #database table #data tr th, body #database table #data tr td {
+body #database #NF thead tr th, body #database #NF thead tr td, body #database #NF #data tr th, body #database #NF #data tr td {
   padding: 1%;
   display: flex;
   justify-content: center;
@@ -1416,15 +1416,70 @@ body #database table thead tr th, body #database table thead tr td, body #databa
   text-align: center;
   width: 33%;
 }
-body #database table thead tr th .icon, body #database table thead tr td .icon, body #database table #data tr th .icon, body #database table #data tr td .icon {
+body #database #NF thead tr th .icons, body #database #NF thead tr td .icons, body #database #NF #data tr th .icons, body #database #NF #data tr td .icons {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 110%;
 }
-body #database table thead tr th span, body #database table thead tr td span, body #database table #data tr th span, body #database table #data tr td span {
+body #database #NF thead tr th span, body #database #NF thead tr td span, body #database #NF #data tr th span, body #database #NF #data tr td span {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 5px;
+}
+body #database #total {
+  width: 22.5rem;
+  height: 2.5rem;
+  margin-top: 2%;
+  overflow: hidden;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 50px 20px rgb(255, 255, 255);
+}
+body #database #total #datat {
+  width: 30%;
+}
+body #database #total thead {
+  width: 70%;
+}
+body #database #total thead, body #database #total #datat {
+  background-color: #5c3168;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  border: 3px solid;
+  border-color: #ffffff;
+}
+body #database #total thead tr, body #database #total #datat tr {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+body #database #total thead tr th, body #database #total thead tr td, body #database #total #datat tr th, body #database #total #datat tr td {
+  padding: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  width: 90%;
+}
+body #database #total thead tr th .icons, body #database #total thead tr td .icons, body #database #total #datat tr th .icons, body #database #total #datat tr td .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 120%;
+}
+body #database #total thead tr th span, body #database #total thead tr td span, body #database #total #datat tr th span, body #database #total #datat tr td span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 90%;
   margin-left: 5px;
 }
 body #database #reload {
@@ -1733,13 +1788,32 @@ body #Login .Logincont.animacionlogr {
     width: 95%;
     height: 60%;
   }
-  body #database table {
+  body #database #NF {
     width: 98%;
     max-height: 50%;
   }
-  body #database table thead tr th, body #database table thead tr td, body #database table #data tr th, body #database table #data tr td {
+  body #database #NF thead tr th, body #database #NF thead tr td, body #database #NF #data tr th, body #database #NF #data tr td {
     border: 1px solid;
     font-size: 75%;
+  }
+  body #database #total {
+    width: 50%;
+    height: 3%;
+    margin-top: 5%;
+  }
+  body #database #total thead, body #database #total #datat {
+    border: 1px solid;
+    border-color: #ffffff;
+  }
+  body #database #total thead tr th, body #database #total thead tr td, body #database #total #datat tr th, body #database #total #datat tr td {
+    width: 70%;
+  }
+  body #database #total thead tr th .icons, body #database #total thead tr td .icons, body #database #total #datat tr th .icons, body #database #total #datat tr td .icons {
+    font-size: 120%;
+  }
+  body #database #total thead tr th span, body #database #total thead tr td span, body #database #total #datat tr th span, body #database #total #datat tr td span {
+    font-size: 60%;
+    margin-left: 0px;
   }
   body #database #reload {
     width: 2rem;

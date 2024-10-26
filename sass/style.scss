@@ -266,7 +266,7 @@ body{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        table {
+        #NF {
             width: 45rem;
             max-height: 50%;
             overflow-y: scroll;
@@ -298,15 +298,71 @@ body{
                         font-family: $letra2;
                         text-align: center;
                         width: 33%;
-                        .icon {
+                        .icons {
                             display: flex;
                             justify-content: center;
                             align-items: center;
+                            font-size: 110%;
                         }
                         span {
                             display: flex;
                             justify-content: center;
                             align-items: center;
+                            margin-left: 5px;
+                        }
+                    }
+                    
+                }
+            }
+        }
+        #total {
+            width: 22.5rem;
+            height: 2.5rem;
+            margin-top: 2%;
+            overflow: hidden;
+            z-index: 99;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px 0px 50px 20px rgba(255,255,255,1);
+            #datat {
+                width: 30%;
+            }
+            thead {
+                width: 70%;
+            }
+            thead, #datat {
+                background-color: $Secundario3;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                border: 3px solid;
+                border-color: $Secundario;
+                tr {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-around;
+                    th, td {
+                        padding: 1%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: $Secundario;
+                        font-family: $letra2;
+                        text-align: center;
+                        width: 90%;
+                        .icons {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 120%;
+                        }
+                        span {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 90%;
                             margin-left: 5px;
                         }
                     }
@@ -662,7 +718,7 @@ body{
         }
 
         #database {
-            table {
+            #NF {
                 width: 98%;
                 max-height: 50%;
                 thead, #data {
@@ -670,6 +726,28 @@ body{
                         th, td {
                             border: 1px solid;
                             font-size: 75%;
+                        }
+                        
+                    }
+                }
+            }
+            #total {
+                width: 50%;
+                height: 3%;
+                margin-top: 5%;
+                thead, #datat {
+                    border: 1px solid;
+                    border-color: $Secundario;
+                    tr {
+                        th, td {
+                            width: 70%;
+                            .icons {
+                                font-size: 120%;
+                            }
+                            span {
+                                font-size: 60%;
+                                margin-left: 0px;
+                            }
                         }
                         
                     }

@@ -7,10 +7,14 @@ fetch(url)
 const mostrarData = (data) => {
     console.log(data)
     let body = ""
+    let datat = ""
     for (var i = 0; i < data.length; i++) {      
        body+=`<tr><td>${data[i].Nombre}</td><td>${data[i].Numero}</td><td>${data[i].NFamiliares}</td></tr>`
+       datat =`<tr><td>${data[0].TotalNF}</td></tr>`
     }
     document.getElementById('data').innerHTML = body
-    //console.log(body)
+    document.getElementById('datat').innerHTML = datat
 }
+
+
 
