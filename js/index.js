@@ -118,12 +118,12 @@ nav.classList.toggle('dark');
  const formuario = document.getElementById('formuario');
  const exito = document.getElementById('exito');
  const database = document.getElementById('base');
- 
+
 
  formuario.addEventListener('submit', async(e) => {
 	e.preventDefault();
 try {
-	const respuesta = await fetch('https://api.sheetbest.com/sheets/84c5c2ef-9605-4500-b76e-555c83e9e5b9', {
+	const respuesta = await fetch('https://schedrios-default-rtdb.firebaseio.com/', {
 		method: 'POST',
 		mode: 'cors',
 		headers: {
@@ -133,46 +133,17 @@ try {
 			'Nombre': formuario.Nombre.value,
 			'Numero': formuario.Numero.value,
 			'NFamiliares': formuario.NF.value
-		})
+		}) 
 	});
 	const contenido = await respuesta.json();
 	console.log(contenido);
+	setTimeout(function() {
+		formuario.classList.remove('activof');
+		exito.classList.add('activof');
+	}, 300)
+		formuario.classList.add('animacion');
 } 
 catch(error){
 	console.log(error);
 }
-
-setTimeout(function() {
-	formuario.classList.remove('activof');
-	exito.classList.add('activof');
-}, 600)
-    formuario.classList.add('animacion');
-	
- });
-
-//Login
-
- function loguear()
- {
-	 let user = document.getElementById('user').value;
-	 let pass = document.getElementById('pass').value;	 
- 
-	 if (user=='Osmar' && pass=='2005' || user=='Danna' && pass=='2005') {
-		setTimeout(function() {
-			window.location='database.html';
-		}, 1000)
-		const login = document.getElementById('Logincont');
-		       login.classList.add('animacionlogr');
-
-	 }
- 
-	 else {
-		setTimeout(function() {
-			const formuariolog = document.getElementById('formuariolog');
-			const error = document.getElementById('error');
-				formuariolog.classList.remove('activolog');
-				error.classList.add('activolog');
-		}, 1000)
-		formuariolog.classList.add('animacionlog');
-	 }
- }
+});
